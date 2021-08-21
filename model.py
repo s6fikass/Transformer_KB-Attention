@@ -408,12 +408,13 @@ def compute_f1(gold, pred, global_entity, kb):
     microF1_PRED = 0.0
 
     for it in range(len(gold)):
-        f1_true, count = compute_prf(gold[it],pred[it], global_entity, kb[it])
+        f1_true, count = compute_prf(gold[it], pred[it], global_entity, kb[it])
         microF1_TRUE += f1_true
         microF1_PRED += count
 
     f1_score = microF1_TRUE / float(microF1_PRED + epsilon)
     return f1_score
+
 
 class Transformer(nn.Module):
     def __init__(self, hidden_size, n_layers, n_heads, d_inner, max_r, n_words, b_size, sos_tok, eos_tok, pad_tok, itos,
@@ -450,7 +451,6 @@ class Transformer(nn.Module):
 
         self.loss = 0
         self.print_every = 1
-
 
     def train_batch(self, input_batch, out_batch, input_mask, out_mask, loss_compute, target_kb_mask=None, kb=None,
                     kb_attn=True, kvl=True):
@@ -519,7 +519,7 @@ class Transformer(nn.Module):
         return decoded_words, batch_loss
 
     def evaluate_batch(self, input_batch, out_batch, input_mask, out_mask, loss_compute, target_kb_mask=None, kb=None,
-                    kb_attn=True, kvl=True):
+                       kb_attn=True, kvl=True):
         batch_loss = 0
         src = input_batch.cuda()
         trg = out_batch.cuda()
@@ -581,9 +581,7 @@ class Transformer(nn.Module):
 
         del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv
         torch.cuda.empty_cache()
-
         return decoded_words, batch_loss
-
 
     def evaluate_model(self, data, loss_compute, valid=False, test=False, kb_attn=True, kvl=True):
         if valid:
@@ -612,8 +610,8 @@ class Transformer(nn.Module):
             kb = batch.kb_inputs
 
             decoded_words, loss_Vocab = self.evaluate_batch(input_batch, out_batch, input_batch_mask, out_batch_mask,
-                                                         loss_compute, target_kb_mask=target_kb_mask, kb=kb,
-                                                         kb_attn=kb_attn, kvl=kvl)
+                                                            loss_compute, target_kb_mask=target_kb_mask, kb=kb,
+                                                            kb_attn=kb_attn, kvl=kvl)
 
             batch_predictions = decoded_words.contiguous()
 
@@ -629,20 +627,22 @@ class Transformer(nn.Module):
         moses_multi_bleu_score = moses_multi_bleu(candidates2, references2, True)
 
         if test:
-            return moses_multi_bleu_score, val_loss / batches_len, candidates2, references2, f1_score/batches_len
+            return moses_multi_bleu_score, val_loss / batches_len, candidates2, references2, f1_score / batches_len
 
         return moses_multi_bleu_score, val_loss / batches_len
 
     def check_entity(self, word, kb, subject_tracker, k):
         if word in self.entities_p.keys() and len(kb) > 1:
             for triple in kb:
+                if self.entities_p[word] == triple[1] and triple[0] in subject_tracker[k]:
+                    return triple[2]
+
+            for triple in kb:
                 if word == triple[0]:
                     subject_tracker[k].append(word)
                     return word
                 if word == triple[2]:
+                    subject_tracker[k].append(word)
                     return word
-            for triple in kb:
-                if self.entities_p[word] == triple[1] and word in subject_tracker[k]:
-                    return triple[2]
 
         return word
