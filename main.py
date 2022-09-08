@@ -28,11 +28,11 @@ def parse_args(args=None):
         usage='train.py [<args>] [-h | --help]'
     )
 
-    parser.add_argument('--gpu', action='store_true', help='use GPU', default=True)
-    parser.add_argument('--data_path', type=str, default=None)
+    parser.add_argument('--gpu', action='store_true', help='use GPU', default=False)
+    parser.add_argument('--data_path', type=str, default="data/SMD")
     parser.add_argument('-d', '--hidden_size', default=512, type=int)
     parser.add_argument('-e', '--epochs', default=200, type=int)
-    parser.add_argument('-b', '--batch_size', default=20, type=int)
+    parser.add_argument('-b', '--batch_size', default=64, type=int)
     parser.add_argument('-i', '--d_inner', default=2048, type=int)
     parser.add_argument('-n', '--n_layers', default=1, type=int)
     parser.add_argument('--heads', default=8, type=int)
@@ -54,7 +54,7 @@ def get_model(args):
                         textdata.getVocabularySize(),
                         args.batch_size, textdata.word2id['<sos>'], textdata.word2id['<eos>'],
                         textdata.word2id['<pad>'],
-                        None, gpu=args.gpu, lr=args.lr, dropout=args.dropout,
+                        None,textdata, gpu=args.gpu, lr=args.lr, dropout=args.dropout,
                         use_entity_loss=True, entities_property=textdata.entities_property, kb_attn=args.kb_attn,
                         kvl=args.kvl)
 
@@ -74,7 +74,7 @@ def main(args):
 
     if args.data_path is None:
         print('Using Default Data path - ./data')
-        args.data_path = './data'
+        args.data_path = './data/SMD'
         train_file = args.data_path + '/kvret_train_public.json'
         valid_file = args.data_path + '/kvret_dev_public.json'
         test_file = args.data_path + '/kvret_test_public.json'
@@ -141,7 +141,7 @@ def main(args):
                                                           SimpleLossCompute(model.generator, model.criterion,
                                                                                optim=model_opt),
                                                           target_kb_mask=target_kb_mask, kb=kb_batch,
-                                                          kb_attn=args.kb_attn, kvl=False)
+                                                          kb_attn=args.kb_attn, kvl=True)
             model.loss += loss_Vocab
 
         epoch_loss = model.loss / train_len

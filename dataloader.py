@@ -101,7 +101,7 @@ class Batch:
         self.weights = []
         self.encoderMaskSeqs = []
         self.decoderMaskSeqs = []
-
+        self.triples_hist = []
 
 class TextData:
     availableCorpus = collections.OrderedDict([  # OrderedDict because the first element is the default choice
@@ -184,8 +184,8 @@ class TextData:
             batch.encoderMaskSeqs.append(list(np.ones(len(sample[0]))))
             batch.kb_inputs.append(sample[2])
 
-            batch.seqIntent.append(sample[3])
-
+            #batch.seqIntent.append(sample[3])
+            batch.triples_hist.append(sample[3])
             batch.encoderSeqsLen.append(len(sample[0]))
             batch.decoderSeqsLen.append(len(sample[1]) + 1)
 
@@ -395,6 +395,7 @@ class TextData:
             self.padToken = self.word2id['<pad>']
             self.sosToken = self.word2id['<sos>']
             self.eosToken = self.word2id['<eos>']
+            self.hisToken = self.word2id['<his>']
             self.unknownToken = self.word2id['<unknown>']  # Restore special words
 
     def filterFromFull(self):
@@ -507,6 +508,7 @@ class TextData:
         self.padToken = self.getWordId('<pad>')
         self.sosToken = self.getWordId('<sos>')
         self.eosToken = self.getWordId('<eos>')
+        self.hisToken = self.getWordId('<his>')
         self.unknownToken = self.getWordId('<unknown>')
         for conversation in tqdm(conversations, desc='Extract conversations'):
             self.extractConversation(conversation, valid, test)
@@ -528,6 +530,7 @@ class TextData:
         output_txt_conversation = []
         triples = self.extractText(conversation['kb'], kb=True, train=not (valid or test))
         targetIntent = self.extractText(conversation['intent'], intent=True, train=not (valid or test))
+        entity_tracker=[]
         for i in tqdm_wrap(
                 range(0, len(conversation['lines']) - 1, step),  # We ignore the last line (no answer for it)
                 desc='Conversation',
@@ -555,11 +558,14 @@ class TextData:
                     if i >= 1:
                         # input_conversation.append(self.eouToken)
                         input_conversation.extend(output_conversation)
-                        # input_conversation.append(self.eouToken)
+                        if self.hisToken in input_conversation:
+                            input_conversation.remove(self.hisToken)
+                        input_conversation.append(self.hisToken)
 
                         # backup for text samples
                         # input_txt_conversation.append("<eou>")
                         input_txt_conversation.append(output_txt_conversation)
+                        input_txt_conversation.append(self.id2word[self.hisToken])
                         # input_txt_conversation.append("<eou>")
 
                     input_txt_conversation.append(inputLine['utterance'])
@@ -569,34 +575,35 @@ class TextData:
                         self.extractText(inputLine['utterance'], triples, train=not (valid or test)))
                     output_conversation = self.extractText(targetLine['utterance'], triples, train=not (valid or test))
                     out_with_intent = output_conversation
+                    triples_hist = self.extractTriples(input_conversation,triples)
 
                 if not valid and not test:  # Filter wrong samples (if one of the list is empty)
                     if truncate and (len(input_conversation[:]) >= 40 or len(output_conversation[:]) >= 40):
                         # truncate if too long
                         self.trainingSamples.append(
                             [input_conversation[len(input_conversation) - 40:], out_with_intent[:40], triples,
-                             targetIntent])
+                             triples_hist])
                         self.txtTrainingSamples.append(
                             [np.array2string(np.array(input_txt_conversation[:]).flatten()).strip("]").strip("["),
-                             self.sequence2str(out_with_intent[:]), targetIntent])
+                             self.sequence2str(out_with_intent[:]), triples_hist])
                     else:
-                        self.trainingSamples.append([input_conversation[:], out_with_intent[:], triples, targetIntent])
+                        self.trainingSamples.append([input_conversation[:], out_with_intent[:], triples, triples_hist])
                         self.txtTrainingSamples.append(
                             [self.sequence2str(input_conversation[:]), self.sequence2str(out_with_intent[:]),
-                             self.id2intent[targetIntent]])
+                             self.sequence2str(triples_hist)])
                 elif valid:
                     if truncate and (len(input_conversation[:]) >= 40 or len(output_conversation[:]) >= 40):
                         self.validationSamples.append(
                             [input_conversation[len(input_conversation) - 40:], output_conversation[:40], triples,
-                             targetIntent])
+                             triples_hist])
                     else:
                         self.validationSamples.append(
-                            [input_conversation[:], output_conversation[:], triples, targetIntent])
+                            [input_conversation[:], output_conversation[:], triples, triples_hist])
                     self.txtValidationSamples.append(
                         [self.sequence2str(input_conversation[:]), self.sequence2str(out_with_intent[:]),
-                         self.id2intent[targetIntent]])
+                         self.sequence2str(triples_hist)])
                 elif test:
-                    self.testSamples.append([input_conversation[:], output_conversation[:], triples, targetIntent])
+                    self.testSamples.append([input_conversation[:], output_conversation[:], triples, triples_hist])
 
     def extractText(self, line, triples=[], kb=False, intent=False, train=True):
         """Extract the words from a sample lines
@@ -794,5 +801,15 @@ class TextData:
 
     def getMaxTriples(self):
         return max(map(len, (s for [_, _, s, _] in self.trainingSamples)))
+
+    def extractTriples(self, input_conversation, triples):
+        if len(triples)==0:
+            return []
+        existing_tripes = []
+        flatten_entities = np.array(triples).flatten()
+        for word in input_conversation:
+            if word in flatten_entities and not word in existing_tripes:
+                existing_tripes.append(word)
+        return existing_tripes
 
 

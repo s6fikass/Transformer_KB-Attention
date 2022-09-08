@@ -10,6 +10,7 @@ import subprocess
 import tempfile
 import numpy as np
 from six.moves import urllib
+from torch.utils.data import dataloader
 
 
 def get_clones(module, N):
@@ -120,23 +121,34 @@ class DecoderLayer(nn.Module):
 
 
 class KGAttention(nn.Module):
-    def __init__(self, vocab_size, d_model, heads, dropout=0.1):
+    def __init__(self, vocab_size, d_model, heads, dropout=0.1,textData=None,gpu=False):
         super().__init__()
+        self.data = textData
         self.embed = Embedder(vocab_size, d_model)
+        self.gpu=gpu
         self.attn = MultiHeadAttention(heads, d_model, dropout=dropout)
         self.norm = Norm(d_model)
 
     def forward(self, decoder_self_attn, kg_input, kg_mask):
         # print(kg_input)
-        subject = torch.from_numpy(np.array(kg_input)[:, :, 0]).cuda()
-        relation = torch.from_numpy(np.array(kg_input)[:, :, 1]).cuda()
-        predicate = torch.from_numpy(np.array(kg_input)[:, :, 2]).cuda()
+        if self.gpu:
+            subject = torch.from_numpy(np.array(kg_input)[:, :, 0]).cuda()
+            relation = torch.from_numpy(np.array(kg_input)[:, :, 1]).cuda()
+            predicate = torch.from_numpy(np.array(kg_input)[:, :, 2]).cuda()
+        else:
+            subject = torch.from_numpy(np.array(kg_input)[:, :, 0])
+            relation = torch.from_numpy(np.array(kg_input)[:, :, 1])
+            predicate = torch.from_numpy(np.array(kg_input)[:, :, 2])
 
         subject_embed = self.embed(subject)
+        sub=self.data.sequence2str(subject[0],tensor=True)
+        pred=self.data.sequence2str(relation[0],tensor=True)
+        obj=self.data.sequence2str(predicate[0],tensor=True)
         relation_emb = self.embed(relation)
         kg_key = subject_embed + relation_emb
         kg_value = self.embed(predicate)
-        kg_mask = kg_mask.cuda()
+        if self.gpu:
+            kg_mask = kg_mask.cuda()
         x = self.attn(decoder_self_attn, kg_key, kg_value, kg_mask)
         return self.norm(x)
 
@@ -417,11 +429,12 @@ def compute_f1(gold, pred, global_entity, kb):
 
 
 class Transformer(nn.Module):
-    def __init__(self, hidden_size, n_layers, n_heads, d_inner, max_r, n_words, b_size, sos_tok, eos_tok, pad_tok, itos,
+    def __init__(self, hidden_size, n_layers, n_heads, d_inner, max_r, n_words, b_size, sos_tok, eos_tok, pad_tok, itos,textData,
                  gpu=False, lr=0.01,
                  dropout=0.1, use_entity_loss=False, entities_property=None, kb_attn=True, kvl=True):
         super(Transformer, self).__init__()
         self.name = "Transformer"
+        self.textData=textData
         self.input_size = n_words
         self.output_size = n_words
         self.hidden_size = hidden_size
@@ -445,18 +458,24 @@ class Transformer(nn.Module):
         self.encoder = Encoder(self.input_size, self.hidden_size, self.n_layers, self.n_heads, self.dropout)
         self.decoder = Decoder(self.output_size, self.hidden_size, self.n_layers, self.n_heads, self.dropout)
         if kb_attn:
-            self.kg_attention = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout)
+            self.kg_attention = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData)
+            self.kg_attention2 = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData)
         self.generator = Generator(self.hidden_size, self.output_size)
         self.criterion = LabelSmoothing(size=self.output_size, padding_idx=self.pad_tok, smoothing=0.1)
 
         self.loss = 0
         self.print_every = 1
 
-    def train_batch(self, input_batch, out_batch, input_mask, out_mask, loss_compute, target_kb_mask=None, kb=None,
+    def train_batch(self,  input_batch, out_batch, input_mask, out_mask, loss_compute, target_kb_mask=None, kb=None,
                     kb_attn=True, kvl=True):
         batch_loss = 0
-        src = input_batch.cuda()
-        trg = out_batch.cuda()
+        if self.gpu:
+            src = input_batch.cuda()
+            trg = out_batch.cuda()
+        else:
+            src = input_batch
+            trg = out_batch
+
         trg_input = trg[:, :-1]
         trg_y = trg[:, 1:]
 
@@ -467,15 +486,21 @@ class Transformer(nn.Module):
         src_mask, trg_mask = create_masks(src, trg_input, self)
 
         n_tokens = (trg_y != self.pad_tok).data.sum()
+        x=self.textData.sequence2str(src[0],tensor=True)
 
         encoder_op = self.encoder(src, src_mask)
 
         target_kb_mask = target_kb_mask.unsqueeze(-2)
-
-        decoded_words = torch.zeros(b_size, int(max_target_length)).cuda()
-        decoder_input = torch.zeros(b_size, int(max_target_length)).cuda().long()
-        decoder_input[:, 0] = torch.LongTensor([self.sos_tok])
-        all_decoder_outputs_vocab = Variable(torch.zeros(b_size, max_target_length, 512)).cuda()
+        if self.gpu:
+            decoded_words = torch.zeros(b_size, int(max_target_length)).cuda()
+            decoder_input = torch.zeros(b_size, int(max_target_length)).cuda().long()
+            decoder_input[:, 0] = torch.LongTensor([self.sos_tok])
+            all_decoder_outputs_vocab = Variable(torch.zeros(b_size, max_target_length, 512)).cuda()
+        else:
+            decoded_words = torch.zeros(b_size, int(max_target_length))
+            decoder_input = torch.zeros(b_size, int(max_target_length)).long()
+            decoder_input[:, 0] = torch.LongTensor([self.sos_tok])
+            all_decoder_outputs_vocab = Variable(torch.zeros(b_size, max_target_length, 512))
 
         if kvl:
             subject_tracker = [[] for i in range(self.b_size)]
@@ -492,11 +517,16 @@ class Transformer(nn.Module):
             if kb_attn:
                 kg_attn = self.kg_attention(decoder_self_attn, kb, target_kb_mask)
                 decoder_op = decoder_op + kg_attn
+                kg_attn2 = self.kg_attention2(encoder_op, kb, target_kb_mask)
+                preds2 = self.generator(kg_attn2)
+                list_v ,list_i = preds2.data.topk(20)
 
             preds = self.generator(decoder_op)
             all_decoder_outputs_vocab[:, j] = decoder_op[:, -1, :]
-            decoder_vocab = preds[:, -1, :]
-
+            if kb_attn:
+                decoder_vocab = preds[:, -1, :] + preds2[:, -1, :]
+            else:
+                decoder_vocab = preds[:, -1, :]
             topv, topi = decoder_vocab.data.topk(1)
 
             if kvl:
@@ -504,7 +534,10 @@ class Transformer(nn.Module):
                     topi[k] = self.check_entity(topi[k].item(), kb[k], subject_tracker, k)
 
             if j != max_target_length - 1:
-                bione = torch.zeros(b_size, int(max_target_length)).cuda().long()
+                if self.gpu:
+                    bione = torch.zeros(b_size, int(max_target_length)).cuda().long()
+                else:
+                    bione = torch.zeros(b_size, int(max_target_length)).long()
                 bione[:, j + 1] = Variable(topi.view(-1))
                 decoder_input = decoder_input + bione
             decoded_words[:, j] = (topi.view(-1))
