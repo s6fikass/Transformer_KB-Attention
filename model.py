@@ -431,7 +431,7 @@ def compute_f1(gold, pred, global_entity, kb):
 class Transformer(nn.Module):
     def __init__(self, hidden_size, n_layers, n_heads, d_inner, max_r, n_words, b_size, sos_tok, eos_tok, pad_tok, itos,textData,
                  gpu=False, lr=0.01,
-                 dropout=0.1, use_entity_loss=False, entities_property=None, kb_attn=True, kvl=True):
+                 dropout=0.1, use_entity_loss=False, entities_property=None, kb_attn=True, kvl=True,double_gen=True):
         super(Transformer, self).__init__()
         self.name = "Transformer"
         self.textData=textData
@@ -453,6 +453,7 @@ class Transformer(nn.Module):
         self.use_entity_loss = use_entity_loss
         self.entities_p = entities_property
         self.kb_attn = kb_attn
+        self.double_gen = double_gen
         self.kvl = kvl
 
         self.encoder = Encoder(self.input_size, self.hidden_size, self.n_layers, self.n_heads, self.dropout)
@@ -461,6 +462,8 @@ class Transformer(nn.Module):
             self.kg_attention = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData)
             self.kg_attention2 = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData)
         self.generator = Generator(self.hidden_size, self.output_size)
+        if double_gen:
+            self.generator2 = Generator(self.hidden_size, self.output_size)
         self.criterion = LabelSmoothing(size=self.output_size, padding_idx=self.pad_tok, smoothing=0.1)
 
         self.loss = 0
@@ -504,6 +507,13 @@ class Transformer(nn.Module):
 
         if kvl:
             subject_tracker = [[] for i in range(self.b_size)]
+        if kb_attn and self.double_gen:
+            kg_attn2 = self.kg_attention2(encoder_op, kb, target_kb_mask)
+            preds2 = self.generator2(kg_attn2)
+            # list_v ,list_i = preds2.data.topk(20)
+        if kb_attn and not self.double_gen:
+            kg_attn2 = self.kg_attention2(encoder_op, kb, target_kb_mask)
+            preds2 = self.generator(kg_attn2)
 
         for j in range(0, max_target_length):
             t_mask = trg_mask[:, :j + 1, :j + 1]
@@ -517,9 +527,6 @@ class Transformer(nn.Module):
             if kb_attn:
                 kg_attn = self.kg_attention(decoder_self_attn, kb, target_kb_mask)
                 decoder_op = decoder_op + kg_attn
-                kg_attn2 = self.kg_attention2(encoder_op, kb, target_kb_mask)
-                preds2 = self.generator(kg_attn2)
-                list_v ,list_i = preds2.data.topk(20)
 
             preds = self.generator(decoder_op)
             all_decoder_outputs_vocab[:, j] = decoder_op[:, -1, :]
