@@ -136,12 +136,13 @@ def main(args):
             input_batch_mask = Variable(torch.FloatTensor(current_batch.encoderMaskSeqs))
             out_batch_mask = Variable(torch.FloatTensor(current_batch.decoderMaskSeqs))
             target_kb_mask = Variable(torch.LongTensor(current_batch.targetKbMask))
+            # current_kb_hist = Variable(torch.LongTensor(current_batch.triples_hist))
 
             decoded_words, loss_Vocab = model.train_batch(input_batch, out_batch, input_batch_mask, out_batch_mask,
                                                           SimpleLossCompute(model.generator, model.criterion,
                                                                                optim=model_opt),
                                                           target_kb_mask=target_kb_mask, kb=kb_batch,
-                                                          kb_attn=args.kb_attn, kvl=True)
+                                                          kb_attn=args.kb_attn, kvl=True)#, current_kb_hist=current_kb_hist)
             model.loss += loss_Vocab
 
         epoch_loss = model.loss / train_len

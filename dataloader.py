@@ -186,6 +186,7 @@ class TextData:
 
             #batch.seqIntent.append(sample[3])
             batch.triples_hist.append(sample[3])
+            batch.triples_hist[i] = batch.triples_hist[i] + [self.padToken] * (32   - len(batch.triples_hist[i]))
             batch.encoderSeqsLen.append(len(sample[0]))
             batch.decoderSeqsLen.append(len(sample[1]) + 1)
 

@@ -470,7 +470,7 @@ class Transformer(nn.Module):
         self.print_every = 1
 
     def train_batch(self,  input_batch, out_batch, input_mask, out_mask, loss_compute, target_kb_mask=None, kb=None,
-                    kb_attn=True, kvl=True):
+                    kb_attn=True, kvl=True, current_kb_hist=None):
         batch_loss = 0
         if self.gpu:
             src = input_batch.cuda()
@@ -677,11 +677,10 @@ class Transformer(nn.Module):
                 if self.entities_p[word] == triple[1] and triple[0] in subject_tracker[k]:
                     return triple[2]
 
-            for triple in kb:
-                if word == triple[0]:
+                if word == triple[0] and word not in subject_tracker :
                     subject_tracker[k].append(word)
                     return word
-                if word == triple[2]:
+                if word == triple[2] and word not in subject_tracker:
                     subject_tracker[k].append(word)
                     return word
 
