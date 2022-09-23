@@ -148,10 +148,11 @@ def main(args):
             #del decoded_words, loss_Vocab,input_batch,out_batch,input_batch_mask,out_batch_mask,target_kb_mask,kb_batch
             gc.collect()
             torch.cuda.empty_cache()
-            print(torch.cuda.memory_summary(device=None, abbreviated=False))
+
 
         epoch_loss = model.loss / train_len
         print(epoch, epoch_loss, "epoch-loss")
+        print(torch.cuda.memory_summary(device=None, abbreviated=False))
 
         model.eval()
         with torch.no_grad():
