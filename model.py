@@ -459,8 +459,8 @@ class Transformer(nn.Module):
         self.encoder = Encoder(self.input_size, self.hidden_size, self.n_layers, self.n_heads, self.dropout)
         self.decoder = Decoder(self.output_size, self.hidden_size, self.n_layers, self.n_heads, self.dropout)
         if kb_attn:
-            self.kg_attention = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData)
-            self.kg_attention2 = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData)
+            self.kg_attention = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData,gpu=self.gpu)
+            self.kg_attention2 = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData,gpu=self.gpu)
         self.generator = Generator(self.hidden_size, self.output_size)
         if double_gen:
             self.generator2 = Generator(self.hidden_size, self.output_size)

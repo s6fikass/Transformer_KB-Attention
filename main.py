@@ -28,7 +28,7 @@ def parse_args(args=None):
         usage='train.py [<args>] [-h | --help]'
     )
 
-    parser.add_argument('--gpu', action='store_true', help='use GPU', default=False)
+    parser.add_argument('--gpu', action='store_true', help='use GPU', default=True)
     parser.add_argument('--data_path', type=str, default="data/SMD")
     parser.add_argument('-d', '--hidden_size', default=512, type=int)
     parser.add_argument('-e', '--epochs', default=200, type=int)
