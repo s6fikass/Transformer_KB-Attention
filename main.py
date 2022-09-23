@@ -9,6 +9,7 @@ from dataloader import TextData
 from model import Transformer, NoamOpt, SimpleLossCompute
 import argparse
 import time
+import gc
 torch.cuda.empty_cache()
 
 def str2bool(v):
@@ -144,6 +145,10 @@ def main(args):
                                                           target_kb_mask=target_kb_mask, kb=kb_batch,
                                                           kb_attn=args.kb_attn, kvl=True)#, current_kb_hist=current_kb_hist)
             model.loss += loss_Vocab
+            del decoded_words, loss_Vocab,input_batch,out_batch,input_batch_mask,out_batch_mask,target_kb_mask,kb_batch
+            gc.collect()
+            torch.cuda.empty_cache()
+            print(torch.cuda.memory_summary(device=None, abbreviated=False))
 
         epoch_loss = model.loss / train_len
         print(epoch, epoch_loss, "epoch-loss")

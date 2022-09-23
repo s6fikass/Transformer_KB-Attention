@@ -490,7 +490,7 @@ class Transformer(nn.Module):
         src_mask, trg_mask = create_masks(src, trg_input, self)
 
         n_tokens = (trg_y != self.pad_tok).data.sum()
-        x=self.textData.sequence2str(src[0],tensor=True)
+        #x=self.textData.sequence2str(src[0],tensor=True)
 
         encoder_op = self.encoder(src, src_mask)
 
@@ -553,11 +553,11 @@ class Transformer(nn.Module):
         loss = loss_compute(all_decoder_outputs_vocab, trg_y, n_tokens)
 
         batch_loss = (loss.item()) / n_tokens
-        print(torch.cuda.memory_summary(device=None, abbreviated=False))
-        del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv, preds2, preds,decoder_vocab,decoder_op
+        del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv, decoder_input_zero,decoder_self_attn
+        del target_kb_mask, preds2, preds,decoder_vocab,decoder_op, src_mask, trg_mask, encoder_op, n_tokens, subject_tracker,t_mask,kg_attn,bione
         gc.collect()
         torch.cuda.empty_cache()
-        print(torch.cuda.memory_summary(device=None, abbreviated=False))
+
 
         return decoded_words, batch_loss
 
