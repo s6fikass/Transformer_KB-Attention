@@ -553,9 +553,9 @@ class Transformer(nn.Module):
         loss = loss_compute(all_decoder_outputs_vocab, trg_y, n_tokens)
 
         batch_loss = loss / n_tokens
-        # del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv, decoder_input_zero,decoder_self_attn, kb
-        # del target_kb_mask, preds2, preds,decoder_vocab,decoder_op, src_mask, trg_mask, encoder_op, n_tokens, subject_tracker,t_mask,bione, input_mask, input_batch
-        # del kg_attn2, kg_attn
+        del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv, decoder_input_zero,decoder_self_attn, kb
+        del target_kb_mask, preds2, preds,decoder_vocab,decoder_op, src_mask, trg_mask, encoder_op, n_tokens, subject_tracker,t_mask,bione, input_mask, input_batch
+        del kg_attn2, kg_attn
         gc.collect()
         torch.cuda.empty_cache()
 

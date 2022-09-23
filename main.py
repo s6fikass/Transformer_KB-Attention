@@ -33,7 +33,7 @@ def parse_args(args=None):
     parser.add_argument('--data_path', type=str, default="data/SMD")
     parser.add_argument('-d', '--hidden_size', default=512, type=int)
     parser.add_argument('-e', '--epochs', default=200, type=int)
-    parser.add_argument('-b', '--batch_size', default=64, type=int)
+    parser.add_argument('-b', '--batch_size', default=32, type=int)
     parser.add_argument('-i', '--d_inner', default=2048, type=int)
     parser.add_argument('-n', '--n_layers', default=1, type=int)
     parser.add_argument('--heads', default=8, type=int)
@@ -145,7 +145,7 @@ def main(args):
                                                           target_kb_mask=target_kb_mask, kb=kb_batch,
                                                           kb_attn=args.kb_attn, kvl=True)#, current_kb_hist=current_kb_hist)
             model.loss += loss_Vocab
-            #del decoded_words, loss_Vocab,input_batch,out_batch,input_batch_mask,out_batch_mask,target_kb_mask,kb_batch
+            del decoded_words, loss_Vocab,input_batch,out_batch,input_batch_mask,out_batch_mask,target_kb_mask,kb_batch
             gc.collect()
             torch.cuda.empty_cache()
 
