@@ -9,7 +9,7 @@ from dataloader import TextData
 from model import Transformer, NoamOpt, SimpleLossCompute
 import argparse
 import time
-
+torch.cuda.empty_cache()
 
 def str2bool(v):
     if isinstance(v, bool):
