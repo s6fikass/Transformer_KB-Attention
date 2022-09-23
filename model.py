@@ -576,7 +576,7 @@ class Transformer(nn.Module):
 
         src_mask, trg_mask = create_masks(src, trg_input, self)
 
-        n_tokens = (trg_y != self.pad_tok).data.sum().items()
+        n_tokens = (trg_y != self.pad_tok).data.sum().item()
 
         encoder_op = self.encoder(src, src_mask)
 
