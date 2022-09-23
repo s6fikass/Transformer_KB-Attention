@@ -29,11 +29,11 @@ def parse_args(args=None):
         usage='train.py [<args>] [-h | --help]'
     )
 
-    parser.add_argument('--gpu', action='store_true', help='use GPU', default=False)
+    parser.add_argument('--gpu', action='store_true', help='use GPU', default=True)
     parser.add_argument('--data_path', type=str, default="data/SMD")
     parser.add_argument('-d', '--hidden_size', default=512, type=int)
     parser.add_argument('-e', '--epochs', default=200, type=int)
-    parser.add_argument('-b', '--batch_size', default=2, type=int)
+    parser.add_argument('-b', '--batch_size', default=64, type=int)
     parser.add_argument('-i', '--d_inner', default=2048, type=int)
     parser.add_argument('-n', '--n_layers', default=1, type=int)
     parser.add_argument('--heads', default=8, type=int)
