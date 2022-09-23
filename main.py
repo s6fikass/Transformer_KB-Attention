@@ -29,11 +29,11 @@ def parse_args(args=None):
         usage='train.py [<args>] [-h | --help]'
     )
 
-    parser.add_argument('--gpu', action='store_true', help='use GPU', default=True)
+    parser.add_argument('--gpu', action='store_true', help='use GPU', default=False)
     parser.add_argument('--data_path', type=str, default="data/SMD")
     parser.add_argument('-d', '--hidden_size', default=512, type=int)
     parser.add_argument('-e', '--epochs', default=200, type=int)
-    parser.add_argument('-b', '--batch_size', default=64, type=int)
+    parser.add_argument('-b', '--batch_size', default=2, type=int)
     parser.add_argument('-i', '--d_inner', default=2048, type=int)
     parser.add_argument('-n', '--n_layers', default=1, type=int)
     parser.add_argument('--heads', default=8, type=int)
@@ -55,7 +55,7 @@ def get_model(args):
                         textdata.getVocabularySize(),
                         args.batch_size, textdata.word2id['<sos>'], textdata.word2id['<eos>'],
                         textdata.word2id['<pad>'],
-                        None,textdata, gpu=args.gpu, lr=args.lr, dropout=args.dropout,
+                        None, gpu=args.gpu, lr=args.lr, dropout=args.dropout,
                         use_entity_loss=True, entities_property=textdata.entities_property, kb_attn=args.kb_attn,
                         kvl=args.kvl)
 
@@ -145,7 +145,7 @@ def main(args):
                                                           target_kb_mask=target_kb_mask, kb=kb_batch,
                                                           kb_attn=args.kb_attn, kvl=True)#, current_kb_hist=current_kb_hist)
             model.loss += loss_Vocab
-            del decoded_words, loss_Vocab,input_batch,out_batch,input_batch_mask,out_batch_mask,target_kb_mask,kb_batch
+            #del decoded_words, loss_Vocab,input_batch,out_batch,input_batch_mask,out_batch_mask,target_kb_mask,kb_batch
             gc.collect()
             torch.cuda.empty_cache()
             print(torch.cuda.memory_summary(device=None, abbreviated=False))

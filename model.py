@@ -142,9 +142,9 @@ class KGAttention(nn.Module):
             predicate = torch.from_numpy(np.array(kg_input)[:, :, 2])
 
         subject_embed = self.embed(subject)
-        sub=self.data.sequence2str(subject[0],tensor=True)
-        pred=self.data.sequence2str(relation[0],tensor=True)
-        obj=self.data.sequence2str(predicate[0],tensor=True)
+        # sub=self.data.sequence2str(subject[0],tensor=True)
+        # pred=self.data.sequence2str(relation[0],tensor=True)
+        # obj=self.data.sequence2str(predicate[0],tensor=True)
         relation_emb = self.embed(relation)
         kg_key = subject_embed + relation_emb
         kg_value = self.embed(predicate)
@@ -430,7 +430,7 @@ def compute_f1(gold, pred, global_entity, kb):
 
 
 class Transformer(nn.Module):
-    def __init__(self, hidden_size, n_layers, n_heads, d_inner, max_r, n_words, b_size, sos_tok, eos_tok, pad_tok, itos,textData,
+    def __init__(self, hidden_size, n_layers, n_heads, d_inner, max_r, n_words, b_size, sos_tok, eos_tok, pad_tok, itos,textData=None,
                  gpu=False, lr=0.01,
                  dropout=0.1, use_entity_loss=False, entities_property=None, kb_attn=True, kvl=True,double_gen=True):
         super(Transformer, self).__init__()
@@ -460,8 +460,8 @@ class Transformer(nn.Module):
         self.encoder = Encoder(self.input_size, self.hidden_size, self.n_layers, self.n_heads, self.dropout)
         self.decoder = Decoder(self.output_size, self.hidden_size, self.n_layers, self.n_heads, self.dropout)
         if kb_attn:
-            self.kg_attention = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData,gpu=self.gpu)
-            self.kg_attention2 = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, self.textData,gpu=self.gpu)
+            self.kg_attention = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout,gpu=self.gpu)
+            self.kg_attention2 = KGAttention(self.output_size, self.hidden_size, self.n_heads, self.dropout, gpu=self.gpu)
         self.generator = Generator(self.hidden_size, self.output_size)
         if double_gen:
             self.generator2 = Generator(self.hidden_size, self.output_size)
@@ -489,7 +489,7 @@ class Transformer(nn.Module):
 
         src_mask, trg_mask = create_masks(src, trg_input, self)
 
-        n_tokens = (trg_y != self.pad_tok).data.sum()
+        n_tokens = (trg_y != self.pad_tok).data.sum().item()
         #x=self.textData.sequence2str(src[0],tensor=True)
 
         encoder_op = self.encoder(src, src_mask)
@@ -552,9 +552,10 @@ class Transformer(nn.Module):
 
         loss = loss_compute(all_decoder_outputs_vocab, trg_y, n_tokens)
 
-        batch_loss = (loss.item()) / n_tokens
-        del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv, decoder_input_zero,decoder_self_attn
-        del target_kb_mask, preds2, preds,decoder_vocab,decoder_op, src_mask, trg_mask, encoder_op, n_tokens, subject_tracker,t_mask,kg_attn,bione
+        batch_loss = loss / n_tokens
+        # del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv, decoder_input_zero,decoder_self_attn, kb
+        # del target_kb_mask, preds2, preds,decoder_vocab,decoder_op, src_mask, trg_mask, encoder_op, n_tokens, subject_tracker,t_mask,bione, input_mask, input_batch
+        # del kg_attn2, kg_attn
         gc.collect()
         torch.cuda.empty_cache()
 
@@ -575,7 +576,7 @@ class Transformer(nn.Module):
 
         src_mask, trg_mask = create_masks(src, trg_input, self)
 
-        n_tokens = (trg_y != self.pad_tok).data.sum()
+        n_tokens = (trg_y != self.pad_tok).data.sum().items()
 
         encoder_op = self.encoder(src, src_mask)
 
@@ -620,7 +621,7 @@ class Transformer(nn.Module):
 
         loss = loss_compute(all_decoder_outputs_vocab, trg_y, n_tokens)
 
-        batch_loss = (loss.item()) / n_tokens
+        batch_loss = loss / n_tokens
 
         del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv
         torch.cuda.empty_cache()
