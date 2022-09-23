@@ -553,11 +553,11 @@ class Transformer(nn.Module):
         loss = loss_compute(all_decoder_outputs_vocab, trg_y, n_tokens)
 
         batch_loss = (loss.item()) / n_tokens
-        torch.cuda.memory_summary(device=None, abbreviated=False)
+        print(torch.cuda.memory_summary(device=None, abbreviated=False))
         del loss, src, trg, trg_input, trg_y, max_target_length, decoder_input, all_decoder_outputs_vocab, topi, topv, preds2, preds,decoder_vocab,decoder_op
         gc.collect()
         torch.cuda.empty_cache()
-        torch.cuda.memory_summary(device=None, abbreviated=False)
+        print(torch.cuda.memory_summary(device=None, abbreviated=False))
 
         return decoded_words, batch_loss
 
