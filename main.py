@@ -66,7 +66,7 @@ def get_model(args):
 
     if args.gpu:
         model = model.cuda()
-        device = torch.device("cuda:"+args.gpu_device)
+        device = torch.device("cuda:"+str(args.gpu_device))
         print("Current GPU:",torch.cuda.current_device())
 
 
