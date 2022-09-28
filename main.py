@@ -66,7 +66,8 @@ def get_model(args):
 
     if args.gpu:
         model = model.cuda(args.gpu_device)
-        print(torch.cuda.current_device())
+        print("Current GPU:",torch.cuda.current_device())
+
 
 
     return model
@@ -99,7 +100,7 @@ def main(args):
     print('Datasets Loaded.')
 
     print('Compiling Model.')
-
+    print("Current GPU:"+torch.cuda.current_device())
     n_epochs = args.epochs
     epoch = 0
 
