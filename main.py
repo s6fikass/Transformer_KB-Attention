@@ -43,6 +43,7 @@ def parse_args(args=None):
     parser.add_argument('--printevery', default=1, type=int)
     parser.add_argument("--kb_attn", type=str2bool, default=True)
     parser.add_argument("--kvl", type=str2bool, default=True)
+    parser.add_argument("--double_gen", type=str2bool, default=True)
 
     return parser.parse_args(args)
 
@@ -58,7 +59,7 @@ def get_model(args):
                         textdata.word2id['<pad>'],
                         None, gpu=args.gpu, lr=args.lr, dropout=args.dropout,
                         use_entity_loss=True, entities_property=textdata.entities_property, kb_attn=args.kb_attn,
-                        kvl=args.kvl)
+                        kvl=args.kvl, double_gen=args.double_gen)
 
     for p in model.parameters():
         if p.dim() > 1:
@@ -110,9 +111,9 @@ def main(args):
     model_opt = NoamOpt(512, 1, 4000,
                         torch.optim.Adam(model.parameters(), lr=0.001, betas=(0.9, 0.98), eps=1e-9))
 
-    if os.path.exists(args.data_path + '/transformer_kg_checkpoint'):
+    if os.path.exists(args.data_path + '/transformer_kg_checkpoint'+str(args.double_gen)):
         print("Checkpoint Found. Loading progress from checkpoint ...")
-        checkpoint = torch.load(args.data_path + '/transformer_kg_checkpoint')
+        checkpoint = torch.load(args.data_path + '/transformer_kg_checkpoint'+str(args.double_gen))
         model.load_state_dict(checkpoint['model_state_dict'])
         model_opt.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         model_opt._step = checkpoint['step']
