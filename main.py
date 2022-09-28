@@ -179,12 +179,12 @@ def main(args):
                 'optimizer_state_dict': model_opt.optimizer.state_dict(),
                 'step': model_opt._step,
                 'best_score' : best_score
-            }, args.data_path + '/transformer_kg_checkpoint')
+            }, args.data_path + '/transformer_kg_checkpoint'+str(args.double_gen))
 
     print('Model training complete.')
     model.eval()
     print("Loading best model ...")
-    checkpoint = torch.load(args.data_path + '/transformer_kg_checkpoint')
+    checkpoint = torch.load(args.data_path + '/transformer_kg_checkpoint'+str(args.double_gen))
     model.load_state_dict(checkpoint['model_state_dict'])
     model_opt.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     model_opt._step = checkpoint['step']
@@ -202,7 +202,7 @@ def main(args):
         test_out['predicted_response'] = all_predicted
         print('Saving the test predictions......')
         print('F1 Score : ', f1_score)
-        test_out.to_csv(args.data_path + test_results, index=False)
+        test_out.to_csv(args.data_path +'/'+str(args.double_gen) +test_results, index=False)
 
 if __name__ == '__main__':
     main(parse_args())
