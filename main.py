@@ -11,7 +11,7 @@ import argparse
 import time
 import gc
 torch.cuda.empty_cache()
-
+os.environ['CUDA_VISIBLE_DEVICES'] ='0'
 def str2bool(v):
     if isinstance(v, bool):
         return v
@@ -66,9 +66,7 @@ def get_model(args):
 
     if args.gpu:
         model = model.cuda()
-        device = torch.device("cuda:"+str(args.gpu_device))
-        torch.cuda.set_device(device)
-        print("Current GPU:",torch.cuda.current_device())
+
 
 
 
@@ -78,7 +76,9 @@ def get_model(args):
 def main(args):
 
     best_score = 0
-
+    device = torch.device("cuda:"+str(args.gpu_device))
+    torch.cuda.set_device(device)
+    # print("Current GPU:",torch.cuda.current_device())
     if args.data_path is None:
         print('Using Default Data path - ./data')
         args.data_path = './data/SMD'
