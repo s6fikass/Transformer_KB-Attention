@@ -30,6 +30,7 @@ def parse_args(args=None):
     )
 
     parser.add_argument('--gpu', action='store_true', help='use GPU', default=True)
+    parser.add_argument('--gpu_device', type=int, help='GPU number select', default=1)
     parser.add_argument('--data_path', type=str, default="data/SMD")
     parser.add_argument('-d', '--hidden_size', default=512, type=int)
     parser.add_argument('-e', '--epochs', default=200, type=int)
@@ -64,7 +65,9 @@ def get_model(args):
             nn.init.xavier_uniform_(p)
 
     if args.gpu:
-        model = model.cuda()
+        model = model.cuda(args.gpu_device)
+        print(torch.cuda.current_device())
+
 
     return model
 

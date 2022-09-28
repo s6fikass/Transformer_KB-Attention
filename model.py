@@ -565,8 +565,15 @@ class Transformer(nn.Module):
     def evaluate_batch(self, input_batch, out_batch, input_mask, out_mask, loss_compute, target_kb_mask=None, kb=None,
                        kb_attn=True, kvl=True):
         batch_loss = 0
-        src = input_batch.cuda()
-        trg = out_batch.cuda()
+        # src = input_batch.cuda()
+        # trg = out_batch.cuda()
+        if self.gpu:
+            src = input_batch.cuda()
+            trg = out_batch.cuda()
+        else:
+            src = input_batch
+            trg = out_batch
+
         trg_input = trg[:, :-1]
         trg_y = trg[:, 1:]
 
@@ -582,13 +589,28 @@ class Transformer(nn.Module):
 
         target_kb_mask = target_kb_mask.unsqueeze(-2)
 
-        decoded_words = torch.zeros(b_size, int(max_target_length)).cuda()
-        decoder_input = torch.zeros(b_size, int(max_target_length)).cuda().long()
-        decoder_input[:, 0] = torch.LongTensor([self.sos_tok])
-        all_decoder_outputs_vocab = Variable(torch.zeros(b_size, max_target_length, 512)).cuda()
+        if self.gpu:
+            decoded_words = torch.zeros(b_size, int(max_target_length)).cuda()
+            decoder_input = torch.zeros(b_size, int(max_target_length)).cuda().long()
+            decoder_input[:, 0] = torch.LongTensor([self.sos_tok])
+            all_decoder_outputs_vocab = Variable(torch.zeros(b_size, max_target_length, 512)).cuda()
+        else:
+            decoded_words = torch.zeros(b_size, int(max_target_length))
+            decoder_input = torch.zeros(b_size, int(max_target_length)).long()
+            decoder_input[:, 0] = torch.LongTensor([self.sos_tok])
+            all_decoder_outputs_vocab = Variable(torch.zeros(b_size, max_target_length, 512))
 
         if kvl:
             subject_tracker = [[] for i in range(self.b_size)]
+
+        if kb_attn and self.double_gen:
+            kg_attn2 = self.kg_attention2(encoder_op, kb, target_kb_mask)
+            preds2 = self.generator2(kg_attn2)
+            # list_v ,list_i = preds2.data.topk(20)
+
+        if kb_attn and not self.double_gen:
+            kg_attn2 = self.kg_attention2(encoder_op, kb, target_kb_mask)
+            preds2 = self.generator(kg_attn2)
 
         for j in range(0, max_target_length):
             t_mask = trg_mask[:, :j + 1, :j + 1]
@@ -605,7 +627,11 @@ class Transformer(nn.Module):
 
             preds = self.generator(decoder_op)
             all_decoder_outputs_vocab[:, j] = decoder_op[:, -1, :]
-            decoder_vocab = preds[:, -1, :]
+
+            if kb_attn:
+                decoder_vocab = preds[:, -1, :] + preds2[:, -1, :]
+            else:
+                decoder_vocab = preds[:, -1, :]
 
             topv, topi = decoder_vocab.data.topk(1)
 
@@ -614,7 +640,11 @@ class Transformer(nn.Module):
                     topi[k] = self.check_entity(topi[k].item(), kb[k], subject_tracker, k)
 
             if j != max_target_length - 1:
-                bione = torch.zeros(b_size, int(max_target_length)).cuda().long()
+                # bione = torch.zeros(b_size, int(max_target_length)).cuda().long()
+                if self.gpu:
+                    bione = torch.zeros(b_size, int(max_target_length)).cuda().long()
+                else:
+                    bione = torch.zeros(b_size, int(max_target_length)).long()
                 bione[:, j + 1] = Variable(topi.view(-1))
                 decoder_input = decoder_input + bione
             decoded_words[:, j] = (topi.view(-1))
