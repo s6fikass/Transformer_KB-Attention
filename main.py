@@ -202,6 +202,7 @@ def main(args):
         test_out['predicted_response'] = all_predicted
         print('Saving the test predictions......')
         print('F1 Score : ', f1_score)
+        os.makedirs(args.data_path +'/'+str(args.double_gen) , exist_ok=True)
         test_out.to_csv(args.data_path +'/'+str(args.double_gen) +test_results, index=False)
 
 if __name__ == '__main__':
