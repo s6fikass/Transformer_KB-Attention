@@ -1,0 +1,833 @@
+original_response,predicted_response
+What time do you need to take your pills <eos>,What time <eos>
+Ok setting your medicine appointment for 7 pm <eos>,You are welcome <eos>
+There is a chevron <eos>,The closest gas_station is 4_miles away <eos>
+Taking you to chevron <eos>,Chevron is the quickest route to 783_arcadia_pl <eos>
+783_arcadia_pl is the address for chevron gas_station <eos>,Chevron is located at 783_arcadia_pl do you want me to set the gps <eos>
+You're welcome happy to help <eos>,Happy to help <eos>
+What city should i find friday's temperature for <eos>,What city do you want the weather for <eos>
+On friday there will be clear_skies in alhambra <eos>,Temperature in alhambra this week ranges in the area for the gps and low of
+It will be between low_of_20_f and high_of_30f_f in alhambra on friday <eos>,On friday in alhambra the temperature will be low of 80f and a high of
+You're welcome <eos>,You are welcome <eos>
+There are whole_foods 2_miles away and sigona_farmers_market 4_miles away where do we go <eos>,We're 4_miles away from trader_joes but there is heavy_traffic in this moment do i
+Sigona_farmers_market is located 4_miles away with no_traffic it's located at 638_amherst_st <eos>,Yes that's the closest at 3 pm with no_traffic <eos>
+Great glad i could help have a great day we will be there soon <eos>,You're welcome have a great day <eos>
+The weather in fresno over the next 48 hours will be cloudy with snow <eos>,The weather forecast for fresno tomorrow it will be misty in fresno the next 48
+You are welcome <eos>,No problem <eos>
+Home is where is your <unknown> is at 56_cadwell_street <eos>,Home is 56_cadwell_street <eos>
+You are 3_miles away from home with heavy_traffic noted <eos>,You have two restaurants near you one serves pizza and the best option <eos>
+You are welcome driver <eos>,You're welcome happy to help <eos>
+Glad to help <eos>,Happy to help <eos>
+We are 4_miles away from whole_foods and from safeway which one do you prefer <eos>,We're 4_miles away from safeway <eos>
+Safeway is located at 452_arcadia_pl <eos>,Yes <eos>
+You're all set drive carefully <eos>,Okay heading to safeway <eos>
+We're 3_miles away from willows_market but there is a car_collision_nearby <eos>,We're 4_miles away from safeway but there is heavy_traffic in this moment do i
+I'm sorry but there are no other options nearby <eos>,Setting navigation to 409_bollard_st now there is heavy_traffic so be careful <eos>
+Ok driver making a route to willows_market and avoiding the car accident <eos>,I sent the info on your screen drive carefully <eos>
+You are welcome driver <eos>,You're welcome <eos>
+Jill's house is located 5_miles away at 347_alta_mesa_ave <eos>,You have two friends listed tom and jill which one do you want to see
+Sorry i did n't get that <eos>,Noooooooo problem <eos>
+The quickest route is 347_alta_mesa_ave at 5_miles we will be there shortly <eos>,The quickest route has heavy_traffic we should be there soon <eos>
+You're welcome <eos>,You're welcome <eos>
+It will be 80f on tuesday in brentwood <eos>,The highest temperature in brentwood will be 50f on the next two days <eos>
+You're very welcome <eos>,You are welcome <eos>
+Okay scheduling friday dinner with mom at 11 am <eos>,Setting a dinner reminder on the 15th at 6_pm with your mom <eos>
+You are welcome <eos>,No problem <eos>
+Your dinner is 5pm tonight <eos>,Dinner tonight <eos>
+The closest parking_garage is civic_center_garage located 4_miles away at 270_altaire_walk <eos>,The closest parking_garage is dish_parking and it is 4_miles away <eos>
+You're welcome <eos>,You are welcome <eos>
+I've set the gps to stanford_shopping_center 773_alger_dr it's 2_miles away <eos>,We are 2_miles away from stanford_shopping_center does it sound good to you <eos>
+You're welcome <eos>,You're welcome <eos>
+Stanford_express_care is at 214_el_camino_real <eos>,The address is 214_el_camino_real <eos>
+Good day <eos>,You are welcome <eos>
+Where should i check for snow <eos>,What city are you wanting to know if it's going to know if it's just for <eos>
+There will be no snow in corona this week <eos>,What day would you like the forecast for corona <eos>
+No problem my driver <eos>,You are welcome <eos>
+What time shall i set a dinner reminder <eos>,For what day and time would you like to set this <eos>
+I will set a reminder for dinner at 7_pm for the 6th of this month with marie <eos>,A reminder has been set a dinner at 7_pm with the 6th of this month with marie <eos>
+You are welcome <eos>,My pleasure <eos>
+It will not be warm in compton on wednesday <eos>,The weather forecast in compton has heavy_traffic is the low temperature of 50f and the high of 80f and the high of the high of 80f and the high
+Anytime <eos>,Anytime <eos>
+Reminder for football on the 11th of this month at 1 pm with marie is set <eos>,Reminder for football activity with marie on the 11th at 1 pm with marie <eos>
+Anytime <eos>,Have a good day <eos>
+What time would like me to set the appointment <eos>,What date would you like that appointment set for <eos>
+Okay i set your appointment for 3 pm on saturday have a good time <eos>,Reminder set for swimming activity with alex for the on saturday at 3 pm <eos>
+Valero is 4_miles away <eos>,There is a gas_station 1 mile from your location would you like me to pull it has been gas_station 1 mile away would you like to your location would
+Valero is at 200_alester_ave <eos>,Valero is at 200_alester_ave <eos>
+I sent the best possible route on screen but there will be heavy_traffic anyway i'm sorry <eos>,Unfortunately there is heavy_traffic on the route to just you it's just 2_miles away <eos>
+You're welcome <eos>,You're welcome <eos>
+Your friends house is on 5677 southwest 4th street there is moderate_traffic on our way but we're just 1_miles away <eos>,We're 1_miles away from jack's house in the area home is 5_miles away would you like to go there <eos>
+It must have been a <unknown> day for you if you do n't remember the address of your home 56_cadwell_street i was kidding do n't <unknown> me please <eos>,The address is 56_cadwell_street <eos>
+You're welcome <eos>,You're welcome <eos>
+We're 3_miles away from midtown_shopping_center and there is no_traffic on our way <eos>,There is topanga_mall within 2_miles but there is a roadblock nearby <eos>
+You got it gps set <eos>,I sent its position and the route on your screen <eos>
+No problem <eos>,Setting gps to fastest route <eos>
+Tell me what city you would like to know about snow today <eos>,There is no snow in the forecast today <eos>
+It will not snow in cleveland today <eos>,There is no snow in cleveland today <eos>
+You are welcome <eos>,You are welcome <eos>
+We're 5_miles away from starbucks would you like to go there <eos>,There are 3 local cafe would you like the closest one <eos>
+Navigating you to starbucks <eos>,The nearest one is sigona_farmers_market it's the gps <eos>
+The address is 792_bedoin_street i sent the info on your screen drive carefully <eos>,The address is 792_bedoin_street and we are on the screen another route that should do you be there soon <eos>
+Okay scheduling a conference with the sales team at 9 am on the 11th of this month <eos>,I have scheduled a conference with the sales team on the 11th at 9 am on the 11th at 11 am with the 6th of this
+You are welcome <eos>,Anytime <eos>
+Are you talking about the doctor_appointment on wednesday or the one on the 5th <eos>,Your doctor's appointment is at 2_pm with tom <eos>
+Your doctor_appointment on wednesday is at 7_pm with your father <eos>,The doctor_appointment on the_5_th at at at 6_pm with alex <eos>
+Your doctors appointment on the 5th is at 6_pm with alex <eos>,The doctor_appointment on the_5_th at <eos>
+In what city are you interested <eos>,What city are you interested in <eos>
+In los_angeles it will rain today and be low_of_40_f and high_of_60f_f tomorrow it will be warm and low_of_60_f and high_of_80f_f <eos>,In los_angeles it will be rain with a low of 40f and a high of 60f tomorrow will be rain between low_of_70_f and high_of_90f_f <eos>
+No problem <eos>,You are welcome <eos>
+There is the midtown_shopping_center 3_miles away and no_traffic on the route set this destination on your gps <eos>,We are 2_miles away from stanford_shopping_center does it sound good to you <eos>
+Setting gps to midtown_shopping_center anything else <eos>,Setting gps to fastest route to midtown_shopping_center <eos>
+No problem <eos>,You're welcome <eos>
+Hacienda_market is the closest grocery_store 1 mile away <eos>,Sigona_farmers_market 	 is 4_miles away <eos>
+Setting navigation to 1313_chester_ave now there is a road_block_nearby so drive carefully <eos>,The address is 1313_chester_ave do you want me to set the gps to go there <eos>
+No problem <eos>,You're welcome <eos>
+For what city <eos>,For what city would you like to know the weather forecast <eos>
+In downtown_chicago it will be humid on monday snow on tueday dry on wednesday frost on thursday drizzle on friday clear_skies on saturday and sunday <eos>,In downtown_chicago it will be dry on monday and wednesday drizzle on thursday rain on friday and saturday and sunday and sunday <eos>
+You are welcome <eos>,You're very welcome <eos>
+Your tennis_activity is on the 4th at 5_pm and your sister will be attending <eos>,Your tennis_activity is on the 10th at 5_pm <eos>
+You're welcome <eos>,My pleasure <eos>
+Schedule a meeting for what time and day <eos>,Sure what shall and add like to have the <eos>
+Setting meeting for saturday at 1 pm with sales team to go over budget <eos>,The meeting is set for the sales team at 1 pm with the sales team to discuss the quarterly reports to discuss the quarterly reports to
+My pleasure <eos>,You are welcome <eos>
+What city would you like to know the weather about <eos>,What city would you like the weather for <eos>
+It is not predicted to drizzle any today or tomorrow in durham <eos>,There is no drizzle in durham today <eos>
+Anytime <eos>,You're welcome <eos>
+What city do you want to hear the forecast for <eos>,What city would you like the forecast for <eos>
+It will be overcast today and stormy tomorrow in mountain_view <eos>,Today in mountain_view it will be rain with a low of 30f and a high of 40f <eos>
+You're welcome <eos>,You're welcome <eos>
+What location should i look up the weekly forecast for <eos>,What city do you want the weather for <eos>
+It should not be hot in brentwood this week <eos>,It will not be hot in brentwood this week <eos>
+You're welcome <eos>,You are welcome <eos>
+The nearest one is palo_alto_garage r it's just 1_miles away <eos>,Stanford_oval_parking and webster_garage are both close <eos>
+You're welcome <eos>,It is located at 481_amaranta_ave <eos>
+There will be no drizzle in redwood_city this weekend <eos>,There will be no drizzle in redwood_city on saturday <eos>
+No problem <eos>,Anytime <eos>
+Taking you home <eos>,The address is 5671_barringer_street 2_miles away there is no_traffic on screen <eos>
+Home is 5671_barringer_street anything else i can help you with <eos>,The address is 5671_barringer_street and there is no_traffic on our way i sent the info on the address i sent the address on the address i sent it on
+Got it will do <eos>,You're welcome <eos>
+You're welcome i am always happy to help <eos>,You're welcome <eos>
+At what time should i set the appointment <eos>,Ok time would you like the appointment to schedule on the 12th <eos>
+I have <unknown> an appointment for the doctor on the 12th at 7_pm <eos>,Okay i have set a reminder for the doctor's appointment on the 12th <eos>
+You are welcome <eos>,You are welcome <eos>
+What city are you interested in <eos>,What city shall i find the weather forecast for <eos>
+The temperature in compton will be between 70f and 100f on monday and friday during the other days of the week it will <unknown> between 30f and 70f <eos>,On friday low_of_90_f and high_of_100f_f monday and high_of_100f_f saturday and low_of_90_f and high_of_100f_f on sunday and 80f <eos>
+You're very welcome <eos>,You're welcome <eos>
+On friday the highest temperature in mountain_view is predicted to be 50f <eos>,The highest temperature in mountain_view is predicted to be a high of 100f <eos>
+Anytime <eos>,Anytime <eos>
+Okay i will remind you of your yoga activity with your mother scheduled on the 15th of this month <eos>,Okay setting a reminder for yoga activity with mother on the 15th of this month at 5 pm <eos>
+Setting reminder for yoga activity with your mother on the 15th at 3 pm <eos>,I will set a reminder for yoga activity with mother on the 15th of this month <eos>
+Your next tennis_activity is on the 4th at 5_pm with your mother <eos>,Your next tennis activities schedule on the 1st at 6_pm with martha and one on the 11th at 7_pm with your brother at 5_pm with your brother at 4_pm
+Glad i can help <eos>,My pleasure <eos>
+Stanford_express_care is on the way <eos>,We're 6_miles away from stanford_express_care do you at 214_el_camino_real <eos>
+Navigating to stanford_express_care at 214_el_camino_real there is heavy_traffic on the way there however <eos>,I sent the info on your screen you're welcome <eos>
+You're very welcome <eos>,You're welcome <eos>
+I will promptly schedule a swimming activity on monday the 1st with your father at 4 pm <eos>,Scheduling a swimming activity with your father on the 1st at 5 pm <eos>
+You're welcome <eos>,You are welcome <eos>
+Dew is predicted in danville on thursday <eos>,It will be dry on thursday in danville <eos>
+Anytime <eos>,You are welcome <eos>
+Durham does not have any snow predicted this week <eos>,There is no snow predicted to fall in durham on saturday <eos>
+You are welcome <eos>,You are welcome <eos>
+What city do you want the weather for <eos>,You would like to know what the weather is like for what city <eos>
+This week in cleveland the weather will be clear_skies on monday dew on tuesday stormy on wednesday drizzle on thrusday cloudy on friday overcast on saturday and raining on sunday <eos>,The weather forecast for cleveland is about cleveland this week <eos>
+You're very welcome <eos>,You are welcome <eos>
+It will be dry wednesday in new_york <eos>,No the weather forecast in new_york does it wednesday will be dry <eos>
+No problem <eos>,Happy to help <eos>
+For what day would you like to know <eos>,Today in seattle it will be overcast <eos>
+This week in seattle the weather is forecasted to be overcast cloudy windy foggy <unknown> warm and dry <eos>,It will be low_of_90_f and high_of_100f_f on monday low_of_80_f and high_of_100f_f tuesday low_of_40_f and high_of_60f_f wednesday low_of_70_f and high_of_80f_f thursday low_of_40_f and high_of_60f_f thursday and high_of_100f_f thursday low_of_80_f and high_of_100f_f saturday
+You're welcome <eos>,I'm here to assist you <eos>
+Chef chu's is the only chinese_restaurant but here is heavy_traffic <eos>,The nearest one is mandarin_roots at 271_springer_street and chef chu <eos>
+Chef chu's is at 593_arrowhead_way <eos>,Chef chu's is located at 593_arrowhead_way <eos>
+There will be heavy_traffic sorry <eos>,Navigation set to chef chu's on the quickest route <eos>
+You're welcome <eos>,You're welcome <eos>
+Chef chu's is 5_miles away <eos>,The best option <eos>
+There is currently no_traffic <eos>,There is a car_collision_nearby do you want me to reach to set gps to reach gps to set to set gps to reach gps to set the gps to set to
+Gps set happy to assist you <eos>,Gps set to chef chu's on the fastest route <eos>
+For what city would you like to know that <eos>,What city are you interested in <eos>
+It will be rain the first <unknown> of the week and then foggy the second and dry over the weekend in compton <eos>,It will be low_of_90_f and high_of_100f_f on monday low_of_80_f and high_of_90f_f on saturday and high_of_100f_f on sunday <eos>
+You're welcome <eos>,You are welcome <eos>
+It will not be humid in fresno next week <eos>,It will not be humid in fresno next week <eos>
+Anytime <eos>,You're very welcome <eos>
+You have 4 doctor_appointment schedule marie on the 15th your brother on wednesday your mother on the 20th and ana on the 12th <eos>,Okay have two doctor_appointment schedule one on the 8th with mother and the mother is on the same day <eos>
+My pleasure goodbye <eos>,You're welcome <eos>
+Your tennis match is tuesday at 11_am <eos>,Your tennis_activity is on thursday at 11_am <eos>
+You're very welcome <eos>,You are welcome <eos>
+For which one i have two one at 7_pm the 8th and one at 10_am the 1st <eos>,You have two dentist_appointment schedule one on the 7th at 10_am and the other is on the 20th <eos>
+You're welcome <eos>,Happy to help <eos>
+What location do you want me to check if it will be rain <eos>,What city are you interested in <eos>
+Next week it will rain on saturday in los_angeles <eos>,There will be rain this tuesday in los_angeles <eos>
+Anytime <eos>,You're welcome <eos>
+It will not be warm in grand_rapids on saturday <eos>,It will not be warm in grand_rapids on saturday <eos>
+You are welcome <eos>,No problem <eos>
+No problem <eos>,Bye <eos>
+There is a panda_express 3_miles from you as well as a pizza_hut 5_miles from you <eos>,There is pizza_hut 2_miles away would it be good for your hunger <eos>
+Panda_express is at 842_arrowhead_way with no_traffic noted <eos>,Unfortunately there is a car_collision_nearby but i already sent you another route to be able to reach another route to be able to be the route to be able to take a car_collision_nearby <eos>
+I sent the info on your map drive carefully <eos>,You're welcome <eos>
+What city do you want the weather for <eos>,For what city would you like this week's weather report <eos>
+It will be dry other than sunday and the temperatures are expected to be between low_of_70_f and high_of_100f_f monday and tuesday low_of_30_f and high_of_40f_f wednesday low_of_40_f and high_of_60f_f thursday and <unknown> 100 friday to sunday <eos>,This week it's not gon na be foggy in exeter <eos>
+You are welcome <eos>,You are welcome <eos>
+It appears as if there will be a low of 40f and a high of 50f <eos>,The temperature in manhattan on the wednesday the forecast is 20f and high of 70f on the wednesday 80f <eos>
+You're welcome <eos>,Anytime <eos>
+Today you have a 7_pm meeting with hr to discuss_the_merger <eos>,What day is today <eos>
+You are welcome <eos>,You're welcome <eos>
+For what city would you like today and tomorrow's weather for <eos>,For what city would you like to know today and tomorrow's forecast for <eos>
+It will not be foggy in fresno in the coming days <eos>,Today it is fog predicted to be foggy with a low of 40f and a high of 40f tomorrow in fresno tomorrow and tomorrow <eos>
+You're welcome <eos>,Anytime <eos>
+It will not drizzle in cleveland tomorrow <eos>,There will not be any drizzle in cleveland tomorrow <eos>
+No problem <eos>,Anytime <eos>
+What days are you interested in <eos>,What days are you interested in <eos>
+It will be stormy on monday the lowest temperature on tuesday hot on wednesday the hot temperatures on thursday and friday snow on saturday and clear_skies on sunday in durham <eos>,What days are you interested in <eos>
+You are welcome <eos>,You're welcome <eos>
+Conference scheduled for the 5th at 11 am with the vice president <eos>,Reminder set for conference with vice president at 11 am on the 7th at 11 am <eos>
+Have a good day <eos>,Happy to help <eos>
+You have a dentist appointment on friday at 7_pm <eos>,You have a dentist appointment with thursday at 7_pm <eos>
+You're welcome <eos>,You are welcome <eos>
+You will find pizza_chicago at 915_arbol_dr it is 2_miles away without any traffic <eos>,The closest pizza shop is 4_miles away with no_traffic setting navigation now <eos>
+Fastest route being programmed for pizza_chicago <eos>,Setting navigation now there is no_traffic on the route screen drive carefully <eos>
+You're welcome <eos>,You're welcome <eos>
+Here are directions to 5672_barringer_street <eos>,Your home is at 5671_barringer_street <eos>
+The only route has heavy_traffic is that alright <eos>,You're welcome happy to help <eos>
+Directing to 5672_barringer_street now <eos>,You're welcome drive safely <eos>
+You're welcome and have a great day <eos>,Anytime <eos>
+Taking you home <eos>,Home is located at 5671_barringer_street and there is no_traffic noted <eos>
+Your address is 5671_barringer_street we're 3_miles away from home now <eos>,The address is 5671_barringer_street and i sent on your screen the address to avoid the quickest route to your screen <eos>
+Your gps has been set for home <eos>,The only route home and i sent on your screen the screen drive carefully <eos>
+You're welcome happy to help <eos>,You are welcome <eos>
+Palo_alto_cafe is 4_miles away and serves coffee and tea do you want the address <eos>,There is a couple listings for tea places which are you interested in <eos>
+Palo_alto is located at 436_alger_dr <eos>,The address is 436_alger_dr setting navigation now <eos>
+You're welcome <eos>,You're welcome <eos>
+What city do you want the weather for <eos>,What city are you located in <eos>
+It wo n't be overcast or cloudy at all this week in carson <eos>,The weather forecast for carson does not show that it will be cloudy at all <eos>
+You are welcome <eos>,You're welcome <eos>
+Ok i've set a reminder for your doctor's appointment on the 12th at 450 <eos>,Where would you like your <eos>
+There is a shopping_center 3_miles from you the address is 338_alester_ave would you like directions <eos>,Midtown_shopping_center is 3_miles away <eos>
+Setting navigation to the midtown_shopping_center there is a car_collision_nearby so drive carefully <eos>,The address is 773_alger_dr now there is heavy_traffic on the route to go there <eos>
+I sent the info on your screen drive carefully <eos>,You're welcome <eos>
+What city would you like the forecast for <eos>,What city are you interested in <eos>
+It will be dry today snow on tuesday dew on wednesday warm on thursday misty on friday snow on saturday and cloudy on sunday in grand_rapids <eos>,The weather in grand_rapids is rain fog rain with a low of 30f and a high of 40f <eos>
+You're welcome <eos>,You're welcome <eos>
+Scheduled football activity for today at 11_am with ana <eos>,Reminder set for football activity with ana for today at 11 am <eos>
+No problem <eos>,You are welcome <eos>
+Making a note for yoga at 5 pm on the 12th <eos>,Okay making note of your yoga appointment at 5_pm on the 12th <eos>
+What city shall i check for you <eos>,Where are you wanting to know the weather for <eos>
+Today is not humid in exeter it is stormy low of 40f high of 50f <eos>,Today is frost in exeter with low temperature of 50f and high of 60f <eos>
+You're welcome <eos>,You're welcome <eos>
+There is n't any rain predicted to fall in redwood_city this week <eos>,It will not rain in redwood_city this week <eos>
+Anytime <eos>,You're welcome <eos>
+What city are you interested in <eos>,Where do you need the forecast for <eos>
+Tomorrow in fresno it will rain <eos>,It will be foggy on tuesday with the low of 80f and a high of 80f <eos>
+No hail in fresno tomorrow there will be rain <eos>,There is n't any rain predicted in fresno tomorrow <eos>
+Until next time <eos>,You're welcome <eos>
+What city are you interested in <eos>,What city do you want the weather for <eos>
+It will be cloudy with a low of 90f and a high of 100f in compton on sunday <eos>,On sunday in compton there is n't any cloudy on sunday 80f <eos>
+Anytime <eos>,Not a problem <eos>
+Your doctor's appointment is schedule for friday at 11_am <eos>,Your doctors appointment is tueday at 11_am <eos>
+What city are you wanting to know the temperature for <eos>,What city would you like the temperature for <eos>
+It will be between low_of_60_f and high_of_70f_f today and low_of_30_f and high_of_40f_f tomorrow in seattle <eos>,Seattle will be a low of 40f and high of 60f tomorrow <eos>
+No problem <eos>,Anytime <eos>
+Yes i have one listed that is 1 mile away <eos>,There is the_clement_hotel do you want me to set the gps to get there <eos>
+Then let's go at palo_alto_garage_r i sent the info on your screen <eos>,The address is 550_alester_ave now you can see it on your map as well <eos>
+You are welcome <eos>,You are welcome <eos>
+The nearest starbucks is 3_miles away there is a road block on its way so i already sent on your screen another route to reach faster <eos>,There is a starbucks nearby <eos>
+Yes it is hope you can have your coffee soon <eos>,The current route is the forecast for <eos>
+The starbucks is located at 792_bedoin_street setting navigation now <eos>,The current route is the only place <eos>
+You're welcome drive safely and enjoy <eos>,You're welcome <eos>
+It will be cloudy but not foggy in redwood_city on tuesday <eos>,It should not be foggy on tuesday in redwood_city <eos>
+Glad i could help out <eos>,You are welcome <eos>
+Navigating you to town_and_country <eos>,We are town_and_country <eos>
+Setting gps for fastest route with no_traffic <eos>,You're welcome <eos>
+The address is 383_university_ave i sent it on your screen <eos>,You're welcome <eos>
+You're welcome and we should be there soon <eos>,You are welcome <eos>
+Yoga is with alex at 11_am <eos>,You will be yoga activities on the 10th at at this with your aunt at 4_pm with at at 5_pm with alex at 5_pm on the 10th
+You are welcome <eos>,You're welcome <eos>
+Your appointment is for tuesday at 11_am <eos>,Your doctor's appointment is on friday at 1_pm <eos>
+There is valero 7_miles away with moderate_traffic on our way <eos>,The closest gas_station is gas_station at 200_alester_ave at 200_alester_ave <eos>
+Valero is at 200_alester_ave <eos>,The address is 53_university_av and i like directions now <eos>
+There is moderate_traffic on our way i sent the route on your screen <eos>,Setting navigation to the route to the quickest route for you <eos>
+You're welcome <eos>,You're welcome <eos>
+You have two meeting schedule one at 4_pm in conference_room_102 to discuss_the_company_picnic and one at 6_pm in 100_conference_room to go over the quarterly report <eos>,You have two meeting schedule one at at 1_pm with the vice_president one at 4_pm at 4_pm the second is on the 10th at 4_pm with the
+You're welcome <eos>,No problem <eos>
+Your next meeting is on monday at 7_pm with the infrastructure_team to go_over_budget <eos>,You next meeting is on monday at 2_pm infrastructure_team infrastructure_team in attendance to go over the quarterly report <eos>
+The nearest parking_garage is palo_alto_garage r it's 1_miles away navigate you there <eos>,The closest parking_garage is 	 palo_alto_garage r there is a car_collision_nearby but it is 3_miles away <eos>
+I sent the info and the quickest info on your screen you're welcome <eos>,550_alester_ave is located at 481_amaranta_ave do you want me to set the gps <eos>
+Your swimming activity with jon has been scheduled for <unknown> 10th at 3 pm <eos>,Reminder for swimming activity with alex on the 10th at 3_pm with jon <eos>
+It is my job and pleasure <eos>,You are welcome <eos>
+Your boss will be at the meeting on monday at 1_pm <eos>,You have two meeting schedule one at 6_pm with boss at 1_pm with boss <eos>
+Happy to help <eos>,Happy to help <eos>
+What location do you want to know if it will snow <eos>,What city do you want the weather for <eos>
+It will snow on tuesday in mountain_view <eos>,It will not snow in mountain_view this week <eos>
+No problem <eos>,You're welcome <eos>
+When <eos>,What day and time shall the add this to your alarm <eos>
+Okay we set up your doctor's appointment today at 1_pm <eos>,Today is gon na be warm in doctor's appointment with your sister today at 1_pm <eos>
+We're 3_miles away from topanga_mall and there is heavy_traffic on its way <eos>,We are 1_miles away from stanford_shopping_center does it sound good to you <eos>
+You will find topanga_mall at 171_oak_rd <eos>,The address is 773_alger_dr i sent it on your screen and there is heavy_traffic <eos>
+Setting navigation now <eos>,Unfortunately there is a car_collision_nearby but there is heavy_traffic on the address for the address of the heavy_traffic on the address
+You're welcome drive safely <eos>,You're welcome <eos>
+Bye <eos>,You are very welcome <eos>
+The_westin is 4_miles away with moderate_traffic will that help <eos>,The closest hotel is the_westin it's 4_miles away and there is 6_miles away <eos>
+The_westin is at 329_el_camino_real do you need me to set the navigation <eos>,The address is 753_university_ave <eos>
+Navigation set have a great day <eos>,Navigation set for quickest route <eos>
+Your dinner is on tuesday with your sister <eos>,Your dinner is on the 10th at on tuesday with sister <eos>
+You're welcome <eos>,Anytime <eos>
+It will be stormy and hail in san_francisco in the next two days <eos>,It will not be warm in san_francisco next week <eos>
+No problem <eos>,You're welcome <eos>
+For which one i have two one on the 8th at 11_am and one on wednesday at 11_am <eos>,You have two lab_appointment schedule one on the 5th at 5_pm and the other is at 1_pm with the tom <eos>
+You're welcome <eos>,My pleasure <eos>
+Where are you wanting to know if it's going to rain or not <eos>,Ok city would you like the forecast for <eos>
+It is not going to rain in san_francisco this week <eos>,It is predicted to rain in san_francisco next week <eos>
+No problem <eos>,You're welcome <eos>
+What city are you wanting to know the weather for <eos>,Where would you like to hear the weather forecast for <eos>
+Tomorrow in seattle is looking warm with a low of 70f and a high of 90f no sign of fog <eos>,The weather forecast predicts that wednesday it will be foggy tomorrow in <eos>
+No problem <eos>,Anytime <eos>
+What city would you like the 7 day forecast for <eos>,What city shall i check the weather information for <eos>
+It should not be humid in compton next week <eos>,It will not be humid in compton next week <eos>
+Anytime <eos>,You're welcome <eos>
+Tom lives at 580_van_ness_ave <eos>,You have two friends listed jill and tom which one do you want to jill and tom and tom and tom
+I did you're welcome <eos>,You're welcome <eos>
+What time on the 1st should i set a reminder to watch the football game <eos>,I set a reminder for the football game <eos>
+I have set a reminder for the football game at 2_pm on the 1st <eos>,I have a reminder for the football game <eos>
+You are welcome <eos>,Happy to help <eos>
+Your doctor_appointment is on monday at 2_pm <eos>,You have a doctor's appointment set for friday at 2_pm <eos>
+What city do you want the weather forecast for <eos>,What city should i check today's forecast for <eos>
+Today in downtown_chicago there should be hail with a high of 70f <eos>,In chicago it should be low_of_40_f and high_of_60f_f monday low_of_90_f and high_of_100f_f on tuesday low_of_90_f and high_of_60f_f saturday and high_of_100f_f today and high_of_60f_f on tuesday and high_of_100f_f and high_of_60f_f on wednesday low_of_90_f and high_of_100f_f
+You're welcome <eos>,You're welcome <eos>
+On thursday the temperature in alhambra will be low of 20f and high of 30f <eos>,Yes there will be 20f in alhambra on thursday <eos>
+Happy to help <eos>,You're welcome <eos>
+The 4th at 1_pm with tom the 10th at 9_am with ana the 13th at 9_am with your father the 5th at 2_pm with alex and the 10th at 4_pm with your sister <eos>,Your appointment for which is on the 10th at 6_pm <eos>
+What city are you inquiring about <eos>,Which city would you like the weather for <eos>
+What would you like to know about the weather in durham <eos>,This week in durham there will be clear_skies with a low of 20f and a high of 80f <eos>
+The weekly forecast does not show that there will be a blizzard in durham this week <eos>,There will be no blizzard in durham on thursday <eos>
+Not a problem <eos>,You are welcome <eos>
+Is there a specific day you would like to know the weather for in new_york <eos>,What would you like to know about the weather in new_york <eos>
+It will be dry and between low_of_30_f and high_of_50f_f friday in new_york <eos>,The weather forecast in new_york on friday with jeff <eos>
+No problem <eos>,Happy to help <eos>
+Taking medicine with your brother at 6 pm on the 13th has been scheduled <eos>,Setting a reminder to take medicine on the 13th what time should i add <eos>
+It is cloudy right now in cleveland <eos>,It is raining today <eos>
+You're welcome <eos>,You're welcome <eos>
+The palo_alto_medical_foundation is 4_miles away at 611_ames_ave would you like directions there <eos>,Stanford_childrens_health is 4_miles away <eos>
+There is moderate_traffic on our way and you should be able to reach there fast i sent all the info on your screen drive carefully <eos>,There is no_traffic on the route to palo_alto_medical_foundation <eos>
+You're welcome <eos>,You're welcome <eos>
+Your football activity is on sunday at 9_am with your brother <eos>,Your football game is on the football activity with your brother on the 7th at 1_pm <eos>
+Happy to help <eos>,You are welcome <eos>
+There is a safeway 2_miles away would you like to get its address <eos>,The nearest grocery_store is safeway <eos>
+Safeway is at 452_arcadia_pl <eos>,Safeway is at 452_arcadia_pl <eos>
+The only route has moderate_traffic is that going to be okay <eos>,Setting navigation to safeway now there is moderate_traffic so be windy <eos>
+Safeway is the only grocery_store listed it has moderate_traffic will that be ok <eos>,You to safeway at 452_arcadia_pl <eos>
+Setting destination now <eos>,Setting navigation to safeway now there is at 452_arcadia_pl now <eos>
+You're welcome <eos>,You're welcome drive safely <eos>
+It is not hail in manhattan the forecast says it is dry today <eos>,There is a forecast of hail in manhattan this week <eos>
+Any time <eos>,Sure i'm here to assist you <eos>
+Could you please let me know what place i am looking up the data for <eos>,Which city are you interested in <eos>
+This week boston does not have any weather predictions of it being cloudy <eos>,It will rain monday in boston with a low of 80f and a high of 100f <eos>
+No problem my driver <eos>,You're welcome <eos>
+For which time period did you want weather information <eos>,What time period are you interested in <eos>
+It is between low_of_50_f and high_of_70f_f in new_york right now <eos>,The temperature in new_york is a low of 40f and a high of 60f <eos>
+No problem <eos>,No problem <eos>
+What city are you in <eos>,You want the weekly temperature for what city <eos>
+This week in manhattan the temperature will range from 20f to 100f <eos>,The temperature in manhattan will be between 60f and high of 40f on tuesday low of 80f and the temperature of 80f and the 80f
+I'm here to assist you <eos>,You're welcome <eos>
+Okay setting a reminder to take medicine with your brother <unknown> at 9_am on sunday <eos>,Okay setting a reminder to take medicine with your brother on sunday at 9 am <eos>
+No problem <eos>,You are welcome <eos>
+Your conference is set for monday with your boss to go_over_budget <eos>,Which one i have two one on tuesday with the to one on the brother would you like to know the 2_miles away with your
+The conference is with your boss <eos>,You are welcome <eos>
+You're welcome do n't forget it's held in conference room 102 <eos>,You are welcome <eos>
+No problem <eos>,You are welcome <eos>
+Jack lives at 864_almanor_ln <eos>,You have a listings for jack is that the friend you speak of jill which would you do you that the that the friend jack
+You're welcome <eos>,You're welcome <eos>
+There is no starbucks locally <eos>,The nearest starbucks is 6_miles away at 792_bedoin_street <eos>
+Teavana is 5_miles away at 145_amherst_st with moderate_traffic <eos>,A is nearby to teavana <eos>
+The current route is the fastest one i can find <eos>,There is moderate_traffic to teavana it is just gps <eos>
+You're welcome <eos>,You're welcome <eos>
+Palo_alto_garage r 	 is at 481_amaranta_ave <eos>,We're 1_miles away from dish_parking and 4_miles away from palo_alto_garage r i have two grocery_store which one at 550_alester_ave there is 4_miles away from
+I will send on your screen the quickest route sure there is heavy_traffic now and we will have to make the route slightly longer <eos>,Unfortunately there is a car_collision_nearby but i sent on your screen another route to reach the quickest route to the set the gps <eos>
+You're welcome we should arrive shortly <eos>,145_amherst_st you can see it on your screen <eos>
+Which appointment would you like the date for <eos>,Your optometrist_appointment is on wednesday <eos>
+The forecast says there will be snow in fresno there is no <unknown> of clear_skies on wednesday <eos>,There will be clear_skies in fresno on wednesday <eos>
+You are welcome <eos>,Anytime <eos>
+Whole_foods located at 819_alma_st is 1 mile away although there is a car_collision_nearby <eos>,Navigating you to safeway <eos>
+The current route is the quickest <eos>,Setting navigation to 819_alma_st now <eos>
+You're welcome <eos>,You're welcome <eos>
+The one at 6_pm with jon is on the 11th <eos>,Your next dinner event is with your tom on the 11th with your tom and one on the 15th <eos>
+Glad i can help <eos>,Have a great day <eos>
+What time do you want to go swimming <eos>,What day and time should i schedule your swimming <eos>
+What city would you like to hear this weather information for <eos>,What city do you want the weather for <eos>
+It will not snow in san_mateo this week <eos>,There is no snow in the forecast for san_mateo this week <eos>
+You're welcome <eos>,You're welcome <eos>
+Which location do you want to know the current temperature of <eos>,For what city would you like to know the temperature <eos>
+The temperature in alameda now is low 60f and high 80f <eos>,The current temperature in alameda is low of 70f and a high of 80f <eos>
+You are welcome <eos>,You are welcome <eos>
+On friday on san_francisco the weather will be dry with a high of 80f <eos>,There will be clear_skies in san_francisco on friday <eos>
+Anytime <eos>,You are welcome <eos>
+The_clement_hotel is 8_miles away at 657_ames_ave <eos>,The four_seasons is 4_miles away <eos>
+There is currently moderate_traffic on the way to the hotel setting directions now <eos>,The fastest route to the_clement_hotel <eos>
+You're welcome <eos>,You're welcome <eos>
+What city are you wanting to know the weather for <eos>,What city do you want the weather for <eos>
+In los_angeles it is going to be hot today with a low of 40f and a high of 60f tomorrow will be rain with a low of 40f and a high of 60f <eos>,In los_angeles it will rain monday with a low of 80f and a high of 40f tomorrow it will be rain with a low of 40f <eos>
+Anytime <eos>,You are very welcome <eos>
+What city are you inquiring about <eos>,What city are you in <eos>
+In seattle there is snow right now <eos>,There is a forecast of hail with a low of 80f and a low of 80f and a low of 80f and a low of hail with a low of 80f and a low
+You are most welcome <eos>,No problem <eos>
+What city can i check for snow for you <eos>,What city are you wanting to know if it's going to know if it's going to know if it's going to know if it's going to know if it's
+Snow is predicted to fall on saturday in alameda <eos>,It will not snow in alameda this week <eos>
+You're welcome <eos>,You are welcome <eos>
+What time would like the reminder <eos>,I set a reminder for sunday <eos>
+I have set a reminder for sunday at 2_pm <eos>,I set a reminder for sunday <eos>
+You are welcome <eos>,I set a reminder for sunday <eos>
+I've scheduled a dentist appointment for 3 pm on the 12th anything else <eos>,I have scheduled a dentist appointment for 3_pm next month on the 12th is that correct <eos>
+I have scheduled the appointment <eos>,Yes it's be a dentist appointment for the 12th of this month at 3 pm <eos>
+Peets_coffee also serves tea they are 2_miles away at 9981_archuleta_ave <eos>,We're 4_miles away from peets_coffee and there is heavy_traffic on our way i sent the address to go there is 4_miles away from starbucks do you like directions there is heavy_traffic on the
+Moderate_traffic is listed to peets_coffee <eos>,There is moderate_traffic to 9981_archuleta_ave 4_miles away <eos>
+Displaying directions now <eos>,Setting navigation to 9981_archuleta_ave now <eos>
+You're welcome drive safely and enjoy <eos>,You're welcome <eos>
+The_westin is located 7_miles away with no_traffic setting directions now to 329_el_camino_real <eos>,The closest rest_stop is located at 329_el_camino_real <eos>
+Setting navigation now <eos>,You're welcome <eos>
+You're welcome <eos>,You're welcome <eos>
+Jon and jeff will be attending your tennis_activity <eos>,You have a tennis_activity on the 12th at 1_pm <eos>
+They will be there at 1_pm <eos>,You are welcome <eos>
+You are welcome <eos>,You are welcome <eos>
+What city do you want to hear the forecast report from <eos>,What city are you in <eos>
+It will be stormy in camarillo on friday <eos>,The forecast does not predict it that it will be foggy in camarillo <eos>
+You're welcome <eos>,You're welcome <eos>
+Saturday it will snow in fresno <eos>,There is n't any snow predicted in fresno this week this week <eos>
+Glad to help <eos>,You are welcome <eos>
+The football game is on thursday <eos>,Monday at 1pm <eos>
+You have an optometrist_appointment today at 1pm <eos>,What city would you like to know today <eos>
+The agenda for your meeting is to discuss_the_merger <eos>,Your purpose of the meeting on the to go over the budget <eos>
+Your meeting is on wednesday at 3pm in conference room 100 <eos>,The meeting is set for the 3_pm <eos>
+You're welcome <eos>,You're welcome have a great day <eos>
+There are n't any cloudy days in the forecast for inglewood <eos>,It is not predicted to be cloudy this week in inglewood <eos>
+You're welcome <eos>,You're welcome <eos>
+You have two swimming activities schedule one on wednesday at 5_pm and the other on the 5th at 4_pm <eos>,You have two swimming activities schedule the first is on monday at 9_am with hr about the second the the at at
+No problem <eos>,You are welcome <eos>
+Home is 5_miles away at 5671 barringer street <eos>,Navigating you home <eos>
+No the only route available has heavy_traffic i'm sorry <eos>,The fastest route to home has a heavy_traffic i have set it is the gps to reach i have a car_collision_nearby <eos>
+Sorry about it enjoy some music in the meantime <eos>,The quickest route to home 4_miles away with no_traffic would you like the address <eos>
+Okay i will set a schedule for a swimming activity with marie on sunday at 6 pm <eos>,Okay scheduling a swimming activity with marie on sunday at 6 pm <eos>
+You are welcome <eos>,No problem <eos>
+The nearest hotel is hotel_keen it's 3_miles away do you want its address <eos>,We're 4_miles away from four_seasons with no_traffic on our way <eos>
+578_arbol_dr there is no_traffic and you should arrive in a couple minutes <eos>,Hotel_keen is at 578_arbol_dr <eos>
+I picked the best route for you drive carefully <eos>,Okay heading to hotel_keen at 578_arbol_dr <eos>
+You're welcome <eos>,You're welcome <eos>
+There is heavy_traffic in this moment but we're just 1_miles away it should n't take too long to reach there <eos>,The nearest one is 5_miles away with moderate_traffic on our way <eos>
+I sent all the info on your screen drive carefully <eos>,The quickest route to home at 10_am with no_traffic <eos>
+You are welcome <eos>,You are welcome <eos>
+Okay what city should i look in <eos>,What city do you want to know if it will be cloudy <eos>
+During the week it will be cloudy in grand_rapids only today <eos>,It's not gon na be cloudy in grand_rapids this week <eos>
+Glad i could help out <eos>,You're welcome <eos>
+I have located a parking_garage 2_miles away at 880_ames_ct called webster_garage <eos>,We're 5_miles away from dish_parking <eos>
+It is located 2_miles away with moderate_traffic en route <eos>,There is a car_collision_nearby but i already sent on your screen another route to reach on your screen the gps we should reach the gps
+No problem <eos>,You're welcome <eos>
+Your doctor's appointment at 2_pm your aunt will be going <eos>,Your doctor's appointment is at 2_pm with alex <eos>
+Happy to help <eos>,You are welcome <eos>
+I am setting an appointment at the dentist on the 12th of current month at 9_am with martha <eos>,Your dentist appointment with martha for the end of march on the 12th at 9 am <eos>
+You are welcome <eos>,You are welcome <eos>
+Swimming plans <eos>,Okay what day would you like that swimming would you would you like to know what city would you would you like to would you
+Swimming plans on friday at 11_am have been added to the calendar <eos>,Reminder set swimming activity with you on friday at 11_am <eos>
+Ok <eos>,No problem <eos>
+Your agenda for your meeting today is go_over_budget <eos>,The purpose of the meeting today is to go over the budget <eos>
+There is 2 tea shops near you teavana is 4_miles away and cafe_venetia is 5_miles away which one do you want <eos>,You can get tea at teavana at 145_amherst_st <eos>
+Teavana is the fastest <unknown> because there is no_traffic on the way there cafe_venetia has moderate_traffic should we go to teavana <eos>,There is no_traffic on the way to the_clement_hotel <eos>
+I sent on your screen its position and the fastest route to get there <eos>,Okay heading to sigona_farmers_market at 269_alger_dr <eos>
+Teavana is located at 145_amherst_st <eos>,Okay heading to sigona_farmers_market at 269_alger_dr <eos>
+You're welcome glad i could be of assistance <eos>,No problem <eos>
+There is not gon na be any blizzard this week in alhambra on tuesday it will rain <eos>,There will be a blizzard in alhambra on <eos>
+You are very welcome <eos>,Glad to help <eos>
+There is no fog in the forecast for exeter next week <eos>,The weather forecast in exeter calls for clouds on <eos>
+You're welcome <eos>,You are welcome <eos>
+I do not have info on the local starbucks but i do see another coffee place would you like to hear info on it <eos>,There is no starbucks nearby but teavana is located 1 mile away would you like directions there <eos>
+There is coupa located at 394_van_ness_ave there is moderate_traffic but you're just 6_miles away <eos>,Coupa is located at 394_van_ness_ave i sent its position and the screen <eos>
+You are welcome <eos>,You're welcome <eos>
+This week the highest temperature in cleveland will be 100f on saturday <eos>,It will be 100f on cleveland this week <eos>
+You're welcome <eos>,You're welcome <eos>
+Stanford_shopping_center is the only nearby shopping_center <eos>,The nearest shopping_center is the at 773_alger_dr but a road block is located at 773_alger_dr it is 4_miles away <eos>
+There is a car_collision_nearby stanford_shopping_center <eos>,There is moderate_traffic to you at 773_alger_dr <eos>
+The route to 773_alger_dr set to the quickest possible <eos>,Setting gps to 773_alger_dr now <eos>
+You're welcome <eos>,You're welcome <eos>
+You have 3 optometrist_appointment schedule one with marie on the 2nd martha on saturday and your brother on the 16th <eos>,You have two optometrist_appointment schedule one on the 2nd with marie and the other is on the 12th with <eos>
+You're welcome <eos>,Anytime <eos>
+Philz serves coffee and is 6_miles away at 583_alester_ave <eos>,We are 3_miles away from philz set the gps to go there <eos>
+There is no_traffic on the 6 mile route to philz enjoy <eos>,Setting navigation to 583_alester_ave anything else <eos>
+You're welcome <eos>,No problem you're welcome <eos>
+In new_york it will be raining monday and tuesday snow wednesday windy on thursday frost on friday dew on saturday and overcast on sunday <eos>,The weather in new_york is predicted to be overcast the temperature with a low of 30f and a high of 40f <eos>
+You're welcome patience <eos>,You're welcome <eos>
+There is n't any traffic to pizza_my_heart at 528_anton_ct it will be a 6 mile drive <eos>,The nearest pizza place is just 4_miles away and pf_changs 6_miles away <eos>
+Quickest route with no_traffic set for pizza_my_heart have a great day <eos>,Here is the quickest route to pizza_my_heart <eos>
+There is a chef chu's and a tai_pan <eos>,There is a chef chu's chinese would you like to know the address <eos>
+That would be chef chu's <eos>,Chef chu's is the closest chinese <eos>
+Chef chu's is at 593_arrowhead_way <eos>,Chef chu's is located at 593_arrowhead_way do you is 4_miles away <eos>
+You're welcome <eos>,You're welcome we should be there shortly <eos>
+Hotel_keen is a rest_stop located 3_miles away there is a car_collision_nearby but should <unknown> you to long <eos>,There are two hotel_keen and the_clement_hotel both are both near <eos>
+The address for hotel_keen is 578_arbol_dr 3_miles away with a car_collision_nearby <eos>,The address is 578_arbol_dr <eos>
+I sent the quickest route on your screen <eos>,I sent the directions on your screen drive carefully <eos>
+You're welcome drive safely <eos>,You're welcome <eos>
+If you drive carefully it will be for sure <eos>,You are very welcome <eos>
+What city do you want the weather for <eos>,For what city should i check the weather forecast for <eos>
+In manhattan it will be stormy on wednesday and thursday <eos>,It will be stormy on wednesday and saturday in manhattan <eos>
+Anytime <eos>,You're welcome <eos>
+The nearest pizza_restaurant with no_traffic is 3_miles away at 113_anton_ct do you want to go to the round_table <eos>,Dominos is at 776_arastradero_rd it is 4_miles away with no_traffic setting directions now <eos>
+You're welcome <eos>,No problem <eos>
+In los_angeles it is gon na be warm on tuesday <eos>,In los_angeles on tuesday the day will be warm with a high of 30f on sunday <eos>
+Anytime <eos>,You are very welcome <eos>
+Your home is at 56_cadwell_street <eos>,The address is 56_cadwell_street <eos>
+No problem <eos>,Gps set for home <eos>
+Your dinner reservation is at 5_pm <eos>,Your dinner is schedule at 5_pm <eos>
+Palo_alto_medical_foundation at 611_ames_ave is 4_miles away but there is no_traffic on the way setting navigation now <eos>,Stanford_childrens_health is at 899_ames_ct and i set the gps <eos>
+You are welcome <eos>,You're welcome <eos>
+Ok dentist appointment with your dad on the 1st at 2 pm is set <eos>,Setting a reminder for dentist appointment with your sister <eos>
+What date and time is your swim appointment <eos>,I set a reminder for tomorrow for your swim <eos>
+I have added swim appointment to your calendar at 10_am on thursday <eos>,Okay are welcome <eos>
+You are welcome <eos>,No problem <eos>
+Your lab_appointment is on the 5th and your aunt will be attending <eos>,No problem <eos>
+The lab_appointment is schedule for 2_pm on the 5th and your aunt will be attending <eos>,You are welcome <eos>
+You're welcome <eos>,You are welcome <eos>
+The nearest gas_station is located 5_miles away need more info <eos>,There is a chevron 1 mile away <eos>
+Setting gps for quickest route to valero gas_station now <eos>,Gps set the quickest route to valero at 200_alester_ave to your screen there <eos>
+Valero is located at 200_alester_ave <eos>,You're welcome have a great day <eos>
+You're welcome glad i could help <eos>,You're welcome <eos>
+The weather in cleveland on thursday will have dew and a high of 30f <eos>,In cleveland it will be rain on thursday <eos>
+Anytime <eos>,You're welcome <eos>
+Your home is 4_miles away but there is heavy_traffic on our way i sent the best available route on your screen <eos>,There is heavy_traffic on the route <eos>
+Sure it's 56_cadwell_street you can see it on your screen <eos>,The address is 56_cadwell_street <eos>
+You're welcome drive safely <eos>,You're welcome <eos>
+The temperatures in seattle will be high this week and the hot days will be monday and tuesday with 100f but <unknown> <unknown> it's gon na rain too <eos>,It's not gon na be hot in boston this week <eos>
+The highs for boston this weekend are in the 90s while the lows are supposed to be 70s <eos>,The temperature in boston on monday the quickest one do you have a high of 40f on thursday <eos>
+You're welcome glad i could help <eos>,You're welcome have a great day <eos>
+Okay scheduling a swimming activity with your brother for the 7th at 11 am <eos>,Okay scheduling a swimming activity with your brother for the 7th at 11 am <eos>
+Glad to help <eos>,You're welcome <eos>
+Stanford_shopping_center is 4_miles away <eos>,The nearest shopping_center is 7_miles away <eos>
+Ok you will headed <unknown> stanford_shopping_center at 773_alger_dr located 4_miles away <eos>,I sent the quickest route on your screen with your screen drive carefully <eos>
+You are welcome <eos>,You are welcome <eos>
+For which one i have two one at 6_pm and one at 3_pm <eos>,You have two conference schedule one on the 12th with the 100 and one on the 12th with the 15th and one on the 15th with management on the 15th
+The event is on sunday at 6_pm in conference room 102 and management will be attending <eos>,Reminder set for conference at 6_pm on the sunday <eos>
+No problem goodbye <eos>,No problem <eos>
+Currently you are taking_medicine on two <unknown> one is on the 13th at 4_pm with your mother the other is on monday at 11_am with marie <eos>,You have two medicine events schedule one on monday at 4_pm with jon and one on the 10th at 10_am with alex <eos>
+Hr will be at the friday meeting <eos>,The meeting with the hr in conference_room_102 on friday <eos>
+The weather forecast predicts that it will be stormy in los_angeles on sunday <eos>,It will not be windy in los_angeles on sunday <eos>
+No problem <eos>,You're welcome <eos>
+Your next lab_appointment is next monday at 2_pm <eos>,Your lab_appointment is on the 8th at 10_am <eos>
+Okay scheduling a dentist appointment with ana on the 8th at 1 pm <eos>,Okay scheduling a dentist appointment on the 8th at 1 pm with ana <eos>
+Glad i can assist you <eos>,You're welcome <eos>
+There is a travelers_lodge one mile away <eos>,I have two four_seasons and a road_block_nearby on the 8th at 2 pm at near you like to the_clement_hotel at 2 days at 2 mile away at 465_arcadia_pl <eos>
+Travelers_lodge 333_arbol_dr <eos>,Travelers_lodge is at 333_arbol_dr <eos>
+Gps set for shortest route <eos>,There is a road_block_nearby i'm afraid we should your screen to to fall to have to the route to travelers_lodge to have to the route to travelers_lodge to your
+Have a good day <eos>,Anytime <eos>
+You are playing tennis on 11_am friday <eos>,Your tennis game is at 7_pm wednesday <eos>
+You have two dentist_appointment one with your aunt and one with your sister both on monday <eos>,You have two dentist_appointment one on the 5th with alex and the on the 18th with aunt <eos>
+Glad i can assist you <eos>,You are welcome <eos>
+You have four yoga activities schedule one on monday with alex two on friday with sister and one with marie and one on the 17th with martha <eos>,I have two yoga activities one on tuesday with alex and one on the 11th with marie with ana <eos>
+You are welcome <eos>,Have a great day <eos>
+Okay scheduling taking medicine with martha at 5pm next wednesday <eos>,Reminder for taking medicine at 7_pm with the wednesday with martha <eos>
+Taking medicine scheduled for next wednesday at 5_pm <eos>,You are welcome <eos>
+What city do you want the weather for <eos>,What city do you want the weather for <eos>
+There are no clouds in fresno right now <eos>,It is not predicted to be cloudy at all the weather fresno <eos>
+Anytime <eos>,You're welcome have a great day <eos>
+There is no starbucks listed locally but i have another coffee shop listed would you like the address to it <eos>,The nearest starbucks is nearby <eos>
+Then let's go at cafe_venetia 269_alger dr <eos>,Sure is located at 792_bedoin_street <eos>
+The destination is 4_miles away in no_traffic <eos>,You're welcome <eos>
+You are welcome <eos>,Setting gps to 269 alger street <eos>
+There is no starbucks close but there is two <unknown> one is coupa that is 6_miles away and the other is cafe_venetia which is 3_miles away which one do you want <eos>,There is no starbucks nearby <eos>
+Cafe_venetia is located at 269_alger_dr with heavy_traffic is that going to be okay <eos>,I sent the info on your screen drive carefully <eos>
+I sent the info on your screen drive carefully <eos>,I sent the info on your screen drive carefully <eos>
+You're welcome <eos>,You're welcome <eos>
+Where would you like to know if it will snow <eos>,What city would you like me to check if it will be snow today <eos>
+No it's not forecast to snow in corona today the forecast is humid with a low of 70f and a high of 90f <eos>,There is no snow in the forecast for corona <eos>
+You're welcome have a great day <eos>,You're welcome <eos>
+The travelers_lodge is closest to you at 6_miles away in moderate_traffic would you like directions there <eos>,There are the four_seasons hotel 2_miles away and the_westin 5_miles from here which one do you prefer <eos>
+I'm setting the gps for 333_arbol_dr <eos>,Setting navigation to the quickest route to <eos>
+You are welcome <eos>,You are welcome <eos>
+We're 5_miles away from pf_changs do you want to go there <eos>,There is mandarin_roots chinese_restaurant and the address <eos>
+Taking you to pf_changs <eos>,The quickest route to home at heavy_traffic <eos>
+The addres of pfchangs is 669_el_camino_real <eos>,Pf_changs is located at 669_el_camino_real <eos>
+Navigation set we should arrive shortly <eos>,You're welcome <eos>
+What city would you like weather information about <eos>,What city do you want to hear the rain prediction for <eos>
+The weather forecast for oakland does not show rain right now <eos>,There is no rain in oakland right now <eos>
+You are welcome <eos>,No problem <eos>
+I will schedule a conference at 6_pm on the tenth with sales team <eos>,Setting a reminder for conference with the sales team on the sales team <eos>
+You are welcome <eos>,Have a great day <eos>
+Okay setting a reminder to take your medicine with ana at 7_pm on tuesday <eos>,Okay setting a reminder to take medicine on tuesday at 2_pm with ana <eos>
+You are welcome <eos>,My pleasure <eos>
+Chevron is 6_miles away <eos>,We're 2_miles away from chevron <eos>
+I'm sorry chevron is the only gas_station i am able to locate <eos>,Just a starbucks nearby <eos>
+Its address is 783_arcadia_pl i sent it on your screen <eos>,The comfort_inn is located at 753_university_ave <eos>
+You're welcome drive safely <eos>,You're welcome <eos>
+No problem <eos>,You are very welcome <eos>
+Your reminder has been set for saturday at 2 pm to take medicine with martha <eos>,Setting a reminder to take medicine with martha for the saturday at at 3 pm <eos>
+We're 3_miles away from chef chu's and 6_miles away from mandarin_roots <eos>,There is a pf_changs <eos>
+Chef chu's is closer <eos>,The address is 271_springer_street we're 5_miles away and i sent the gps to the gps now <eos>
+Chef chu's is located at 593_arrowhead_way <eos>,The address is 271_springer_street we're 5_miles away do you want me to set the gps set the gps set
+Chef chu's is 3_miles away through moderate_traffic <eos>,The address is 638_amherst_st do you want me to set the gps <eos>
+You're welcome <eos>,You're welcome <eos>
+Stanford_express_care is 7_miles away though there is a car_collision_nearby would you like directions there <eos>,The nearest hospital is located at 214_el_camino_real <eos>
+Okay heading to 214_el_camino_real <eos>,Would you like to go at 214_el_camino_real <eos>
+There are no starbucks around here but we're 4_miles away from cafe_venetia is it okay to go there <eos>,There is no starbucks nearby <eos>
+I sent the address with the fastest route on screen drive carefully <eos>,The address is 269_alger_dr setting navigation now <eos>
+Am or pm <eos>,Where would you like to hear the to be scheduled to be scheduled to go to like to be scheduled
+Swimming reminder has been set for the 12th at 450pm <eos>,Where would you like to hear the reminder and swimming on sunday <eos>
+You're welcome <eos>,Happy to help <eos>
+Your next meeting is with your boss at 10_am in conference_room_102 <eos>,The meeting is at 10_am with the sales team to discuss the merger with the quarterly report <eos>
+You're welcome did you also want to know the agenda for the meeting <eos>,No problem <eos>
+You are welcome <eos>,No problem <eos>
+There is currently snow in san_francisco <eos>,The nearest one is the forecast for san_francisco with low of 80f <eos>
+Happy to help <eos>,You're welcome <eos>
+Which one i have two one with your father on the 3rd and one with tom on the 9th <eos>,You have two doctors appointments schedule one with alex at 4_pm on the 20th and one with jon at 7_pm
+The appointment on the 9th is at 3_pm <eos>,You are welcome <eos>
+What day and time is the conference <eos>,When confirm the day <eos>
+I have that conference set up for you to be reminded of is there anything else you need <eos>,Reminder for conference at 4_pm on august 14th at brother <eos>
+Your reminder for the conference with the executive team on august the 14th at 4 pm is all set <eos>,Okay setting a reminder for your conference with the executive team on august 14th at 4_pm <eos>
+You are welcome <eos>,You are welcome <eos>
+Your tennis_activity is set for 11_am with jon in attendance <eos>,Your tennis_activity is the 5th at at 11_am with jon <eos>
+Happy to help <eos>,Anytime <eos>
+What city would you like weather information about <eos>,What city do you want the weather for <eos>
+In san_jose it is expected to be between low_of_40_f and high_of_60f_f monday and tuesday low_of_70_f and high_of_80f_f wednesday low_of_90_f and high_of_100f_f thursday low_of_70_f and high_of_90f_f friday low_of_30_f and high_of_40f_f saturday and low_of_40_f and high_of_60f_f on sunday <eos>,What days are you interested in <eos>
+You are welcome <eos>,You are welcome <eos>
+In san_mateo it will be stormy on saturday and hail on sunday <eos>,It's just 2_miles away and there will be dew on sunday <eos>
+You're welcome <eos>,Glad to help <eos>
+What city are you interested in <eos>,What location do you want the temperature for <eos>
+The temperature in los_angeles this week <unknown> a low of 40f and the highest will be 100f <eos>,The temperature in los_angeles it will be on monday of 20f and highs in the 100fs <eos>
+You're welcome hope you have a great day <eos>,You're welcome <eos>
+Friday at 3_pm <eos>,Your next conference is this friday a 3_pm <eos>
+Where are you interested in <eos>,What city would you like me to check the weather for <eos>
+In camarillo it will be stormy on tuesday <eos>,It will be windy on camarillo on tuesday <eos>
+Happy to help <eos>,You're welcome <eos>
+Okay i am scheduling a conference with your boss for the 5th of this month at 1 pm <eos>,Okay setting reminder for conference with the boss on the 5th of this month at 1 pm <eos>
+No problem <eos>,Happy to help <eos>
+Okay scheduling a tennis activity with martha for friday at 4 pm <eos>,Okay i am scheduling a tennis activity with martha on friday at 4 pm <eos>
+You are welcome <eos>,Glad to help <eos>
+It will not be windy in atherton in the next few days <eos>,It will not be windy in atherton next week <eos>
+You're welcome <eos>,No problem <eos>
+The travelers_lodge is located 4_miles away at 333_arbol_dr would you like directions there <eos>,The_clement_hotel 	 is 2_miles away <eos>
+Ok i am setting gps for 333_arbol_dr <eos>,There is a road_block_nearby i'm afraid we will have to take a longer route i will have to travelers_lodge now there is the travelers_lodge 4_miles away with car_collision_nearby so just a car_collision_nearby but there is a
+You're welcome have a great day <eos>,You are welcome <eos>
+Okay scheduling a reminder for your tennis activity at 5 pm on the 10th with jon <eos>,Ok reminder for tennis with your father on the tenth at 5 pm is set <eos>
+You are welcome <eos>,Happy to help <eos>
+Jacks_house is at 864_almanor_ln <eos>,I have two friend listed which address would you would you sigona_farmers_market at 638_amherst_st <eos>
+Taking you to jack's house <eos>,Jill's house is at 347_alta_mesa_ave do you want me to set the gps you want the address we the gps set the address <eos>
+I sent all the info on your screen drive carefully <eos>,Setting gps to jack's house the route should arrive shortly <eos>
+Anytime <eos>,You're welcome <eos>
+Okay which one i have one for the 12th at 9_am and one for the 4th at 5_pm <eos>,You have two optometrist_appointment schedule one on the at 9_am with martha and the other at the 12th at 9_am <eos>
+You're welcome <eos>,You are welcome <eos>
+There are the ravenswood_shopping_center and the stanford shopping_center both 3_miles away do you want me to <unknown> a <unknown> between them or will you pick where to go <eos>,The nearest mall is town_and_country <eos>
+Navigating you to ravenswood_shopping_center <eos>,Unfortunately there is moderate_traffic but i sent on the route to the route with moderate_traffic on
+The address to ravenswood_shopping_center is 434_arastradero_rd <eos>,The fastest route to the screen and moderate_traffic with no_traffic to the address with moderate_traffic with
+Good day <eos>,You're welcome happy to i could help <eos>
+Trader_joes is 2_miles away at 408_university_ave there is currently heavy_traffic on the route <eos>,There is a safeway located within away <eos>
+Setting navigation now there is heavy_traffic on the way so drive carefully <eos>,There is no_traffic now the address is 408_university_ave and i've already set the gps to
+You're welcome drive safely <eos>,You're welcome <eos>
+What city are you wanting to know if it's going to rain <eos>,What city are you located in that you would like the rain forecast for <eos>
+It will rain on wednesday in redwood_city <eos>,It is the only rain on monday in redwood_city <eos>
+No problem so long <eos>,You are welcome <eos>
+Stanford_express_care is nearby <eos>,Stanford_childrens_health is at 899_ames_ct 4_miles away would you like directions there is at 899_ames_ct 4_miles away
+Does stanford_express_care have heavy_traffic nearby <eos>,There is heavy_traffic on that way to 830 almanor lane <eos>
+The route to stanford_express_care does have heavy_traffic <eos>,Its address is 214_el_camino_real <eos>
+Yes stanford_childrens_health is 1 mile away with no_traffic do you want the address <eos>,Then let's go at palo_alto_medical_foundation there is heavy_traffic on our way <eos>
+<eos>,The address is at 899_ames_ct <eos>
+I'm sorry i did and i sent the address on your screen drive carefully <eos>,You're welcome <eos>
+Cafe_venetia is 2_miles away at 269_alger_dr <eos>,There is a coffee shop the place it's just 3_miles away <eos>
+Setting navigation now for the quickest route there is a road_block_nearby so drive carefully <eos>,Sure i sent the info on your screen drive carefully <eos>
+Anytime <eos>,You're welcome <eos>
+The_westin is 6_miles away <eos>,The nearest hotel is the_westin <eos>
+Navigating to the_westin <eos>,Navigating you to the_westin <eos>
+The address is 329_el_camino_real <eos>,The_westin is at 329_el_camino_real <eos>
+You're welcome happy to be of assistance <eos>,You're welcome the gps set <eos>
+There is a safeway 4_miles away <eos>,There is one local grocery_store called safeway at 452_arcadia_pl <eos>
+Safeway is located at 452_arcadia_pl with a road_block_nearby <eos>,Safeway is at 452_arcadia_pl <eos>
+I sent the fastest route on your gps drive carefully <eos>,I sent the info on your screen drive carefully <eos>
+You're welcome <eos>,You're welcome <eos>
+Your next meeting is monday at 3_pm <eos>,The next meeting is on the 5th at 1_pm <eos>
+What city are you wanting to know the temperature for <eos>,What city are you in <eos>
+The lowest temperature in fresno this week is predicted to be 60f the highest 100f <eos>,In fresno on monday it will be low_of_70_f and high_of_80f_f <eos>
+No problem <eos>,Anytime <eos>
+Which city are you wanting to know the weather for <eos>,What city are you in <eos>
+It will be windy tomorrow in seattle <eos>,It will not be windy in seattle today <eos>
+You are welcome <eos>,You are welcome <eos>
+I am unable to locate starbucks there is a coffee_or_tea_place called coupa mile away <eos>,There is no starbucks nearby <eos>
+Coupa is 1 mile away with heavy_traffic it should n't take us long it's located at 394_van_ness_ave <eos>,394_van_ness_ave is the fastest route to coupa <eos>
+You're welcome <eos>,You're welcome <eos>
+What day would you like the forcast for <eos>,It will be dry on wednesday saturday and rain on sunday in redwood_city <eos>
+It will not be dry in redwood_city next week <eos>,Anytime <eos>
+You are welcome <eos>,Anytime <eos>
+Monday in fresno will have the highest temperature of 90f <eos>,The highest temperature this week in fresno 30f <eos>
+You are welcome <eos>,Anytime <eos>
+Okay i am scheduling a swimming event with tom on the 6th at 2 pm <eos>,Okay scheduling a swimming activity with tom for the 6th at 2 pm <eos>
+Not a problem <eos>,My pleasure <eos>
+I will note down your eye doctor appointment at 5 pm the 12th <eos>,Ok setting reminder for your eye doctor appointment on the 12th at 5 <eos>
+Midtown_shopping_center is the closest shopping_center to you would you like the address <eos>,We are 2_miles away from stanford_shopping_center would you like to know about <eos>
+We're going to 338_alester_ave there is heavy_traffic but it's just 2_miles away <eos>,Stanford_shopping_center is located at 773_alger_dr <eos>
+Sending the address for the midtown_shopping_center at 338_alester_ave to your gps <eos>,Happy to help you're welcome <eos>
+You're welcome <eos>,You're welcome glad i could help <eos>
+Jills_house is located at 347_alta_mesa_ave <eos>,I have two friend 8_miles away at 347_alta_mesa_ave would you is at 347_alta_mesa_ave <eos>
+Certainly setting navigation details now there's a car_collision_nearby so take care on the <unknown> <eos>,Setting navigation now <eos>
+You're welcome <eos>,You're welcome <eos>
+There is cafe_venetia that's 4_miles away at 269_alger_dr <eos>,The closest is cafe_venetia 3_miles away in heavy_traffic would you like directions there <eos>
+There is no_traffic on our route i've set the navigation there <eos>,Setting navigation to the quickest route to screen with hr to discuss the company picnic <eos>
+You're welcome <eos>,You're welcome <eos>
+The football game is wednesday at 10_am <eos>,The football game starts at 11_am friday morning <eos>
+My pleasure <eos>,You're welcome <eos>
+In what city are you asking <eos>,What city do you want the weather for <eos>
+The temperature in durham will be lowest temperature low of 70f high of 90f tuesday highest temperature low of 40f high of 60f thursday <eos>,The temperature in durham this week will be low of 20f and a high of the 50f <eos>
+You're very welcome <eos>,You are welcome <eos>
+Home is listed as 56 caldwell street <eos>,Your home address is 56_cadwell_street <eos>
+Setting quickest route home now <eos>,The quickest route to home is 2_miles away at 56_cadwell_street <eos>
+Anytime <eos>,You're welcome <eos>
+Pizza_chicago 	 is 2_miles away <eos>,The closest pizza place is dominos at 776_arastradero_rd but a road block is dominos at 776_arastradero_rd do you is 2_miles away and a place is
+The address is 915_arbol_dr would you like directions there <eos>,No problem <eos>
+Okay heading to pizza_chicago <eos>,Setting gps to quickest route we should arrive shortly <eos>
+The nearest one is midtown_shopping_center but there is a road_block_nearby there is also ravenswood shopping_center 2_miles farther but with no_traffic on its direction <eos>,We are 6_miles away from ravenswood_shopping_center would you like me to send its address on your map <eos>
+Setting directions to 434_arastradero_rd <eos>,I sent the info on your screen drive screen drive carefully <eos>
+You're welcome always happy to help <eos>,You're welcome <eos>
+Whole_foods is 4_miles away <eos>,There is a grocery_store 1 mile away would you like safeway sigona_farmers_market and safeway at would you like safeway at trader_joes and trader_joes nearby <eos>
+The quickest route to whole_foods at 819_alma_st does not have any traffic <eos>,Yes <eos>
+Gps set and have a great day <eos>,You're welcome <eos>
+We're 5_miles away from starbucks do you like their tea <eos>,I have a location for a place that serves tea that is 5_miles away you need more info would you need more info on saturday that
+You will find starbucks at 792_bedoin_street <eos>,The address is 792_bedoin_street <eos>
+You're welcome <eos>,Anytime <eos>
+Coupa is nearby and serves tea <eos>,There is a peets_coffee and a teavana close by <eos>
+Moderate_traffic to coupa <eos>,There is no_traffic to safeway <eos>
+Coupa's address is 394_van_ness_ave <eos>,The address is 394_van_ness_ave i sent it on your screen <eos>
+No but palo_alto_cafe is just 1 mile away and has moderate_traffic so we should be able to get there quicker how does that sound <eos>,There is n't any traffic on the route to there gps to reach there <eos>
+Ok <unknown> navigation <eos>,You're welcome <eos>
+The nearer cafe is cafe_venetia it's 2_miles away and there is a car_collision_nearby <eos>,The nearest directions to philz <eos>
+I'm afraid that cafe_venetia is the best option in this moment i sent on your screen the directions to reach there through another route <eos>,Setting navigation to 269_alger_dr now <eos>
+You're welcome drive safely <eos>,You're very welcome <eos>
+Okay scheduling an appointment for yoga <eos>,What date and time do you wish to schedule for yoga <eos>
+What city are you asking about <eos>,What city do you want to know if it will be cloudy <eos>
+Monday will be foggy with low's of 30f and high's of 40f <unknown> <unknown> <eos>,It will be cloudy on monday in manhattan <eos>
+No problem <eos>,You are welcome <eos>
+What city are you asking about <eos>,What city can i tell you the weather for <eos>
+Tomorrow will not be hot in atherton it will be dry low of 30f high of 50f <eos>,It will be hot today in atherton <eos>
+No problem <eos>,You're welcome <eos>
+What location would you like the weather information for <eos>,What city would you like to know if there are clear_skies in <eos>
+Today in san_jose there will be an overcast <unknown> clear_skies <eos>,Today in san_jose it is just 2_miles away <eos>
+No problem <eos>,You're welcome <eos>
+The closest coffee place is coupa but there is heavy_traffic would you like a different location <eos>,The closest coffee shop is starbucks 3_miles away which do you want to go there <eos>
+Starbucks at 792_bedoin_street is 3_miles away with no_traffic <eos>,The closest one does not predict any traffic <eos>
+Sending you direction now <eos>,The quickest route is coupa at 394_van_ness_ave <eos>
+You're welcome <eos>,You're welcome <eos>
+It will be warm in san_francisco tomorrow it should not be windy <eos>,It will not be windy in san_francisco next week <eos>
+No problem <eos>,You're welcome <eos>
+What city are you interested in the forecast for <eos>,Where would you like to hear the forecast from <eos>
+It will snow in los_angeles tomorrow with a low of 70f and a high of 90f <eos>,It will be windy on tuesday with a low of 40f and a high of 60f <eos>
+No problem <eos>,You're welcome <eos>
+You have a conference on the 13th at 9_am with hr <eos>,Your conference is on the_13_th at 9_am with the executive team to discuss the conference room to discuss the dress code <eos>
+Happy to help <eos>,You are welcome <eos>
+Your meeting is schedule for 2_pm tomorrow the agenda is to discuss_the_merger <eos>,The meeting is at 2_pm and the agenda is to gover over the budget <eos>
+You are welcome <eos>,You're welcome <eos>
+You are welcome <eos>,Anytime <eos>
+Reminder set for lab appointment at 6_pm on august 3 with alex <eos>,Okay setting a reminder for your lab appointment with alex on august the at 4_pm <eos>
+What city can i give you this weather information for <eos>,What city would you like to know the weather forecast for <eos>
+Snow is predicted to fall in san_jose on thursday this week <eos>,Yes it will be snow in san_jose on monday <eos>
+You are very welcome <eos>,Anytime <eos>
+Your next appointment with your optometrist is tuesday at 11_am <eos>,Your eye doctor appointment is at 3_pm on thursday <eos>
+You have four football activities schedule one on monday at 6_pm with alex one on the 13th at 9_am with alex one on wednesday at 1_pm with jeff and one on saturday at 5_pm with ana <eos>,You have two football activities schedule one on the 10th with tom and one on the 20th with do you prefer <eos>
+You're welcome <eos>,You're welcome <eos>
+Okay scheduling a football activity with tom for friday at 10 am <eos>,Okay i am scheduling a football activity with tom on the 4th at 3 pm <eos>
+Happy to help <eos>,You are welcome <eos>
+The only nearby hospital is stanford_express_care which is 5_miles away <eos>,We're 5_miles away from stanford_express_care do you want me to this <eos>
+There is currently a road_block_nearby on the 5 mile route to stanford_express_care <eos>,There is moderate_traffic on the way to stanford_express_care <eos>
+The only route to stanford is reporting a road block but i am finding you the quickest route to 214_el_camino_real <eos>,The address is 214_el_camino_real setting navigation now <eos>
+You're welcome drive safely and take care <eos>,You're welcome driver <eos>
+Okay setting reminder for doctor's appointment on the tenth would you like me to include a time <eos>,What time is it <eos>
+Great i've set your doctor's appointment for the 12th at 1 pm <eos>,What time is it <eos>
+We are 3_miles away from <unknown> and <unknown> shopping_center does it sound good to you <eos>,We're 2_miles away from town_and_country does it sound good to you <eos>
+Yes it is <eos>,The quickest route has heavy_traffic but there is that it's just we should be moderate_traffic but you traffic is moderate_traffic on the screen <eos>
+Town_and_country is located at 383_university_ave <eos>,The address is 773_alger_dr i sent it on your screen the info on your screen <eos>
+Have a good day <eos>,You are welcome <eos>
+What city do you need the 2 day temperature for <eos>,What city do you want to know today and tomorrow's temperature for <eos>
+In grand_rapids it will be low_of_50_f and high_of_70f_f today and low_of_20_f and high_of_40f_f tomorrow <eos>,Today monday temperature will be low of 40f and high of 40f tomorrow and low of 80f <eos>
+You're welcome <eos>,You are welcome <eos>
+Coupa is 5_miles away <eos>,There is 2_miles away and there is 3_miles away would you have do you like directions there is no_traffic would you like directions there is
+I will pick the shortest route available for you do n't worry do you want to get the info on your screen <eos>,Yes the current route is the would you like directions there <eos>
+I sent the route on your screen you're welcome <eos>,No problem <eos>
+What city do you wanna know if it will snow today <eos>,What city would you like to know if it's going to snow <eos>
+Today is gon na be warm in oakland <eos>,It will not snow in oakland today <eos>
+No problem <eos>,Anytime <eos>
+Your swimming_activity is on the 5th with your father <eos>,You have two swimming activities schedule the first is on monday with your brother the swimming activities schedule the 8th with your brother on the
+Happy to help <eos>,You are welcome <eos>
+Your lab_appointment is at 7_pm with jon and another one at 2_pm with alex <eos>,Your lab_appointment is at 4_pm with alex <eos>
+My pleasure <eos>,No problem <eos>
+I have a few chinese_restaurant listed which one would you like to know about <eos>,There is a chinese_restaurant nearby <eos>
+Pfchangs is 3_miles away but there is currently heavy_traffic on the route panda_express is farther at 4_miles away but there is n't any traffic <eos>,The closest chinese_restaurant is pf_changs it's 3_miles away <eos>
+Yes panda_express seems to be the fastest <eos>,Setting navigation now to panda_express <eos>
+All right navigating to panda_express at 842_arrowhead_way <eos>,Setting navigation to panda_express we should arrive shortly <eos>
+You're welcome <eos>,You're welcome <eos>
+Your next meeting is with your boss on the 5th at 2_pm <eos>,Your next meeting is on the 5th at 1_pm <eos>
+You're welcome <eos>,Happy to help <eos>
+What city do you want to know if it's going to rain or not <eos>,What city would you like the forecast for <eos>
+There is no rain in fresno today but it will be cloudy <eos>,You are welcome <eos>
+You are welcome <eos>,You are welcome <eos>
+I have two which one i have one for the 14th at 6_pm and one for the 12th at 7_pm <eos>,You have two swimming activities schedule one on friday at 4_pm another on the 15th at 10_am and the last is on the 19th at
+Anytime <eos>,My pleasure <eos>
+What city can i give you the weather forecast for <eos>,For what city would you like me to do a search today's forecast <eos>
+Today is gon na be dry on oakland <eos>,Today in oakland is not be humid with a low of 60f and a low of 40f <eos>
+You're welcome <eos>,You're welcome <eos>
+Okay scheduling a meeting with your boss to go over quarterly report on the 5th at 6 pm <eos>,Okay scheduling a meeting for 6_pm on the 5th of this month with the boss to go over the budget <eos>
+Is there a specific day you would like me to check the weather in grand_rapids for <eos>,The weather predicted for grand_rapids is rain the weather is a low of 20f with a high of 40f <eos>
+Grand_rapids on friday will be windy between low_of_60_f and high_of_70f_f <eos>,On friday there will be clear_skies in grand_rapids on friday <eos>
+You are welcome <eos>,Anytime <eos>
+You're welcome <eos>,Anytime <eos>
+Did you want the current weather <eos>,What would you like to know about the weather in new_york <eos>
+Today's weather forecast is foggy the low temperature of 40f and high of 60f <eos>,Today in new_york is predicted to be foggy with a low of 80f <eos>
+Not a problem <eos>,You are welcome <eos>
+What city would you like weather information about <eos>,Today it is only rain in compton and atherton <eos>
+Yes the forecast calls for rain in new_york today <eos>,No it will not rain in new_york today it is going to be foggy with a low temperature of 40f and a
+No problem <eos>,You are welcome <eos>
+What date is your appointment <eos>,What is and lab appointment <eos>
+A reminder has been set for your doctor's appointment at 7 pm on monday <eos>,What time on the 1st <eos>
+No problem <eos>,You are welcome <eos>
+I'm sorry the only route home has heavy_traffic it will be a 7 mile drive to 10_ames_street <eos>,Home is 1 mile away at 10_ames_street with moderate_traffic noted <eos>
+You're very welcome <eos>,You're welcome <eos>
+It is cloudy in redwood_city today <eos>,It is not snow in redwood_city right now <eos>
+No it is not snow in redwood_city today <eos>,It is not predicted to fall in redwood_city today <eos>
+Happy to help <eos>,You're welcome <eos>
+Would you prefer stanford_shopping_center which is 7_miles away with no_traffic or ravenswood shopping_center which is 1 mile away with a road_block_nearby <eos>,The nearest one is 773_alger_dr is 6_miles away in heavy_traffic <eos>
+Setting directions to 434_arastradero_rd now <eos>,I sent the quickest route on your screen drive carefully <eos>
+You are welcome <eos>,You're welcome <eos>
+You have two yoga activities schedule one on monday at 5_pm and another on the 5th at 4_pm <eos>,You have two yoga activities schedule one on the 1st at 5_pm and another on the 20th at 2_pm with alex <eos>
+Have a great day <eos>,You're welcome <eos>
+There is moderate_traffic on the 4 mile route home to 56_cadwell_street <eos>,Navigating you home <eos>
+You're welcome drive carefully <eos>,You're welcome <eos>
+Anytime <eos>,You are welcome <eos>
+Here are directions to cafe_venetia <eos>,The nearest cafe is 1 mile away would you like the gps with heavy_traffic would you like the nearest one is at
+Unfortunately there is heavy_traffic but it's just 2_miles away you should be able to reach it quickly anyway <eos>,Philz is 2_miles away at 269_alger_dr <eos>
+269_alger_dr is the location of cafe_venetia <eos>,The address is 269_alger_dr setting navigation now <eos>
+You're welcome <eos>,You're welcome <eos>
+Okay a reminder is set for tennis with martha at 10 am what is the date for the scheduled tennis event <eos>,Okay setting a tennis reminder for 10 am the end of march at 9 am <eos>
+Ok setting reminder for your tennis with martha at 10 am for the last week of march <eos>,Okay perfect i've set the reminder for the end of march at 9 am <eos>
+You are welcome <eos>,You are welcome <eos>
+The closest is pizza_chicago 5_miles away at 915_arbol_dr would you like directions there <eos>,The is at 113_anton_ct to go there <eos>
+Here is the shortest route to pizza_chicago <eos>,Setting gps to quickest route we you're welcome <eos>
+You're welcome <eos>,You're welcome <eos>
+There's a parking_garage 2_miles away would you like the name and address of it <eos>,We are 4_miles away from palo_alto_garage r and there is no_traffic in this moment <eos>
+Navigating to palo_alto_garage r <eos>,It's garage is moderate_traffic and webster_garage at 880_ames_ct <eos>
+It is cloudy in redwood_city today <eos>,It is not snow in redwood_city right now <eos>
+No it is not snow in redwood_city today <eos>,It is not predicted to fall in redwood_city today <eos>
+Happy to help <eos>,You're welcome <eos>
+Would you prefer stanford_shopping_center which is 7_miles away with no_traffic or ravenswood shopping_center which is 1 mile away with a road_block_nearby <eos>,The nearest one is 773_alger_dr is 6_miles away in heavy_traffic <eos>
+Setting directions to 434_arastradero_rd now <eos>,I sent the quickest route on your screen drive carefully <eos>
+You are welcome <eos>,You're welcome <eos>
+You have two yoga activities schedule one on monday at 5_pm and another on the 5th at 4_pm <eos>,You have two yoga activities schedule one on the 1st at 5_pm and another on the 20th at 2_pm with alex <eos>
+Have a great day <eos>,You're welcome <eos>
+There is moderate_traffic on the 4 mile route home to 56_cadwell_street <eos>,Navigating you home <eos>
+You're welcome drive carefully <eos>,You're welcome <eos>
+Anytime <eos>,You are welcome <eos>
+Here are directions to cafe_venetia <eos>,The nearest cafe is 1 mile away would you like the gps with heavy_traffic would you like the nearest one is at
+Unfortunately there is heavy_traffic but it's just 2_miles away you should be able to reach it quickly anyway <eos>,Philz is 2_miles away at 269_alger_dr <eos>
+269_alger_dr is the location of cafe_venetia <eos>,The address is 269_alger_dr setting navigation now <eos>
+You're welcome <eos>,You're welcome <eos>
+Okay a reminder is set for tennis with martha at 10 am what is the date for the scheduled tennis event <eos>,Okay setting a tennis reminder for 10 am the end of march at 9 am <eos>
+Ok setting reminder for your tennis with martha at 10 am for the last week of march <eos>,Okay perfect i've set the reminder for the end of march at 9 am <eos>
+You are welcome <eos>,You are welcome <eos>
+The closest is pizza_chicago 5_miles away at 915_arbol_dr would you like directions there <eos>,The is at 113_anton_ct to go there <eos>
+Here is the shortest route to pizza_chicago <eos>,Setting gps to quickest route we you're welcome <eos>
+You're welcome <eos>,You're welcome <eos>
+There's a parking_garage 2_miles away would you like the name and address of it <eos>,We are 4_miles away from palo_alto_garage r and there is no_traffic in this moment <eos>
+Navigating to palo_alto_garage r <eos>,It's garage is moderate_traffic and webster_garage at 880_ames_ct <eos>
+I did and i sent the info on your screen drive carefully <eos>,Setting gps for the quickest route at 550_alester_ave <eos>
+For what city are you interested in <eos>,What city the you interested in knowing about <eos>
+It will not be windy in cleveland next week <eos>,It will not be windy in cleveland next week <eos>
+No problem <eos>,You're welcome <eos>
+The nearest grocery_store is located 6_miles away at 452_arcadia_pl <eos>,The nearest grocery_store is safeway <eos>
+Safeway is located at 452_arcadia_pl and navigation is set <eos>,Navigating to safeway <eos>
+I did i did you're welcome <eos>,You're welcome <eos>
+Okay scheduling a conference with the executive team for the 15th at 9 am <eos>,Okay i have that now would you like to on the 15th of this month with the executive team <eos>
+You're welcome friend <eos>,Glad to help <eos>
